@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Card from "./Card";
-import data from './cards.json';
+import data from './Data.json';
 import Line from "./Line";
 import {ParallaxBanner} from "react-scroll-parallax";
 

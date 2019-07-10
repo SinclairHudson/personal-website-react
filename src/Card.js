@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import data from './cards.json';
+import data from './Data.json';
 import {
     BrowserRouter as Router,
     Route,
