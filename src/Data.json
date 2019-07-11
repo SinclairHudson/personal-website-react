@@ -11,8 +11,7 @@
                 "NLP",
                 "NumPy",
                 "Tensorboard",
-                "Keras",
-                "YAAAAAAAAA"
+                "Keras"
             ],
             "video": null,
             "url": "/project/ajax",
@@ -24,6 +23,28 @@
                 "A Research, Build, Test cycle to complete a project"
             ],
             "howItWorks": "Currently, I've only trained a word classifier working, capable at differentiating 18 different words apart, with about 92% accuracy. The idea was to determine where the word breaks were, partition the sound file into words, and then classify from there. However, with a low classification accuracy, I'm currently looking into a new approach, using a sequence to sequence LSTM network to turn the sound byte into phenomes first. The good news is that I already have the data; I wrote a python script that automatically labels and records my voice, making data collection easy."
+        },
+        "tripwire": {
+            "title": "Tripwire",
+            "dateStart": "June 2019",
+            "dataEnd": "June 2019",
+            "blurb": "An app built in React Native that triggers alarms when in proximity to GPS coordinates.",
+            "img": "ajax.jpg",
+            "tags": [
+                "React Native",
+                "EngHack 2019",
+                "UI/UX"
+            ],
+            "video": null,
+            "url": "/project/tripwire",
+            "intro": "This was a project I created with three of my friends for EngHack 2019. We decided to tackle a light problem: we were all missing our public transit stops because we were reading, sleeping, or on our phones. Obviously, we needed a way to alert us when we got close to a bus stop or specific location. We were all new to React Native, so it was pretty rough, but we all had a good time.",
+
+            "learned": [
+                "React Native, specifically Navigation in React Native",
+                "Advanced Git VC to get four devs working together on one project",
+                "Rapid Prototyping in a team"
+            ],
+            "howItWorks": "The app uses the GPS in the phone for it's main functionality. The user can set certain coordinates as waypoints, and specify what kind of alarm should trigger when the phone came within a specified radius of the point."
         },
         "website": {
             "title": "This Website",
@@ -58,7 +79,7 @@
             ],
             "intro": "During my Grade 12 Year, I had the wonderful opportunity to work with an ex-Hydro One electrical engineer, James Whatley, in my Computer Engineering 12 Class. We learned and then built voltage regulation circuits, amperage regulations circuits, full-wave rectifiers, but we were short on time at the end of the year. Eager to learn more, I talked a bit with my instructor and we agreed to meet for a few days in the early summer to work on another project: the portable speaker.",
             "url": "/project/speaker",
-            "video":"https://www.youtube.com/embed/BCQs8cIpOGc",
+            "video": "https://www.youtube.com/embed/BCQs8cIpOGc",
             "learned": "Implementing and testing sequence classification neural networks\nGoogle Tensorflow, NumPy, Pyaudio, and many other small libraries\nPatience\nA Research, Build, Test cycle to complete a project",
             "howItWorks": "Currently, I've only trained a word classifier working, capable at differentiating 18 different words apart, with about 92% accuracy. The idea was to determine where the word breaks were, partition the sound file into words, and then classify from there. However, with a low classification accuracy, I'm currently looking into a new approach, using a sequence to sequence LSTM network to turn the sound byte into phenomes first. The good news is that I already have the data; I wrote a python script that automatically labels and records my voice, making data collection easy."
         }
@@ -70,11 +91,16 @@
             "dataEnd": "Present",
             "blurb": "Watonomous is the Self-Driving Car team at the University of Waterloo. We compete in the SAE autodrive challenge, striving to create an autonomous vehicle.",
             "img": "wato.jpg",
-            "tags": ["Computer Vision","TensorFlow", "NumPy", "YOLO", "Keras", "YAAAAAAAAA"],
+            "tags": [
+                "Computer Vision",
+                "TensorFlow",
+                "OpenCV",
+                "YOLO",
+                "Keras"
+            ],
             "url": "/experience/watonomous",
             "intro": "I am currently on the Perception team, which is the team's front line. We take in the data from cameras, LIDAR, and radar and attempt to process that data to pull out meaningful features.",
-            "learned":[
-
+            "learned": [
             ],
             "description": "I've worked on a few systems within perception. I experimented in railroad bar detection, and I've trained a YOLOv3 model on Traffic Light detection."
         },
@@ -84,8 +110,13 @@
             "date-end": "August 2019",
             "blurb": "This website is built by myself from scratch, designed in Illustrator, and coded using React.",
             "img": "logo.png",
-            "tags": ["React", "Frontend", "Design", "Illustrator"],
-            "url": "/project/website"
+            "tags": [
+                "React",
+                "Frontend",
+                "Design",
+                "Illustrator"
+            ],
+            "url": "/experience/wawanesa"
         }
     }
 }

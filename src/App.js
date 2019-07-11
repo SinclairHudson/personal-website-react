@@ -51,7 +51,7 @@ class App extends Component {
                                 <div>
                                     <Opener/>
                                     <Card type={"Project"} name={"ajax"}/>
-                                    <Card type={"Project"} name={"website"}/>
+                                    <Card type={"Experience"} name={"watonomous"}/>
                                 </div>
                             )}/>
                             <Route path='/project/:projectId'

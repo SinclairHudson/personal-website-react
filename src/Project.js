@@ -1,8 +1,10 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import data from './Data.json';
+
 const pub = process.env.PUBLIC_URL;
+import ImageGallery from './ImageGallery.js'
 
 class Project extends Component {
     constructor(props) {
@@ -13,17 +15,21 @@ class Project extends Component {
             dataEnd: "Never",
             blurb: "This is the default when a card element doesn't have a correct property to direct it to a project or an experience.",
             img: "default.jpg",
-            tags: ["alpha", "bravo","charlie"]
+            tags: ["alpha", "bravo", "charlie"]
         };
     }
+
     componentDidMount() {
         this.setState(data.Project[this.props.id])
     }
 
     render() {
         return (
-            <div className="Intro">
-                <h1>{this.state.title}</h1>
+            <div>
+                <div className="Intro">
+                    <h1>{this.state.title.toUpperCase()}</h1>
+                </div>
+                <ImageGallery id={this.props.id}/>
             </div>
         );
     }
