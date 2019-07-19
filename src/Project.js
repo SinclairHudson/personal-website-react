@@ -29,7 +29,7 @@ class Project extends Component {
                 <div className="Intro">
                     <h1>{this.state.title.toUpperCase()}</h1>
                 </div>
-                <ImageGallery id={this.props.id}/>
+                {/*<ImageGallery id={this.props.id}/>*/}
             </div>
         );
     }

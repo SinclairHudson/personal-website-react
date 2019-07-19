@@ -13,6 +13,7 @@ import Experience from "./Experience";
 import ProjectPage from "./ProjectPage"
 import Line from "./Line"
 import ExperiencePage from "./ExperiencePage"
+import { Background ,Parallax} from 'react-parallax';
 import {ParallaxProvider} from 'react-scroll-parallax';
 import {
     BrowserRouter as Router,
@@ -21,6 +22,8 @@ import {
     Redirect,
     Switch
 } from 'react-router-dom';
+
+const pub = process.env.PUBLIC_URL;
 
 import createHistory from 'history/createBrowserHistory';
 

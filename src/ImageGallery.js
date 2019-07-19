@@ -1,5 +1,5 @@
 import data from "./Data";
-import React from "react";
+import React, {Component} from "react";
 import Gallery from "react-photo-gallery";
 
 class ImageGallery extends Component {

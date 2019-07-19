@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Overlap from './Overlap/Overlap';
 import {ParallaxBanner} from "react-scroll-parallax";
 const pub = process.env.PUBLIC_URL;
 
@@ -21,6 +22,7 @@ class Opener extends Component {
                         <h1>SINCLAIR HUDSON</h1>
                     </div>
                 </ParallaxBanner>
+                <Overlap />
             </div>
         );
     }

@@ -11,7 +11,8 @@
                 "NLP",
                 "NumPy",
                 "Tensorboard",
-                "Keras"
+                "Keras",
+                "LSTM"
             ],
             "video": null,
             "url": "/project/ajax",
