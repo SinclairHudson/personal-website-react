@@ -3,26 +3,21 @@ import logo from './logo.svg';
 import './App.css';
 import Overlap from './Overlap/Overlap';
 import {ParallaxBanner} from "react-scroll-parallax";
+import ParaPicture from './ParaPicture'
 const pub = process.env.PUBLIC_URL;
+
 
 class Opener extends Component {
     render() {
+        let Opener= "Hello! My name is Sinclair, and I'm currently attending the University of Waterloo for" +
+            " Computer Science. I love learning new things, creating cool projects, and solving problems." +
+            " This website serves as my online portfolio, including my projects, work experience, and events" +
+            " that I have attended. Take a look around, and don't hesitate to contact me!";
         return (
             <div>
-                <ParallaxBanner style={{height: '500px'}}
-                                layers={[
-                                    {
-                                        image: pub + '/img/sailing.jpg',
-                                        amount: 0.7,
-                                        width: 100
-                                    },
-                                ]}>
-                    <div className='Banner'>
                         <h2>Hello! I'm</h2>
                         <h1>SINCLAIR HUDSON</h1>
-                    </div>
-                </ParallaxBanner>
-                <Overlap />
+                <ParaPicture img={pub +'/img/myface.jpg'} para={Opener}/>
             </div>
         );
     }
