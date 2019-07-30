@@ -50,7 +50,7 @@ class Card extends Component {
                             {this.state.blurb}
                         </p>
                         <div className={"Tags"}>{this.generateTags()}</div>
-                        <Link to={this.state.url}>
+                        <Link to={"/project/"+this.props.name}>
                             See More
                         </Link>
                     </div>

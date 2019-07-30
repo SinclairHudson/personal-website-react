@@ -8,7 +8,8 @@ import ImageGallery from './ImageGallery.js'
 import ParaPicture from "./ParaPicture";
 import Opener from "./Opener";
 import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images";
+import Carousel, {Modal, ModalGateway} from "react-images";
+import Card from "./Card";
 
 
 class Project extends Component {
@@ -17,68 +18,84 @@ class Project extends Component {
         this.state = {
             currentImage: null,
             viewerOpen: false,
-            title: "AJAX Voice Recognition",
-            dateStart: "Sept 2018",
-            dataEnd: "Feb 2019",
-            blurb: "Voice Recognition system built with Google Tensorflow.",
+            title: "This is a Title",
+            dateStart: "August 2000",
+            dataEnd: "Present",
+            blurb: "BlurbBlurb",
             img: "0.jpg",
             tags: [
-                "TensorFlow",
-                "NLP",
-                "NumPy",
-                "Tensorboard",
-                "Keras",
-                "LSTM"
+                "Tag0",
+                "Tag1",
+                "Tag2",
             ],
-            gallery:[
+            gallery: [
                 "0.jpg"
             ],
             video: null,
             url: "/project/ajax",
-            intro: "This is my longest ongoing project, which all started with a frustration with a horrible voice recognition library. I decided to give it a shot myself, using Google TensorFlow Maching Learning. Currently, I have some parts working with a sub-optimal accuracy, and I'm looking into different models and methods to achieve great voice recognition. You can find all my code on my GitHub, right here.",
+            intro: "Intro",
             learned: [
-                "Implementing and testing sequence classification neural networks",
-                "Google Tensorflow, NumPy, Pyaudio, and many other small libraries",
-                "Patience",
-                "A Research, Build, Test cycle to complete a project"
+                "Learned0",
+                "Learned1",
+                "Learned2"
             ],
-            howItWorks: "Currently, I've only trained a word classifier working, capable at differentiating 18 different words apart, with about 92% accuracy. The idea was to determine where the word breaks were, partition the sound file into words, and then classify from there. However, with a low classification accuracy, I'm currently looking into a new approach, using a sequence to sequence LSTM network to turn the sound byte into phenomes first. The good news is that I already have the data; I wrote a python script that automatically labels and records my voice, making data collection easy."
+            howItWorks: "How It Works",
+            recommended:[]
         };
     }
 
     componentDidMount() {
         this.setState(data.Project[this.props.id]);
         let arr = data.Project[this.props.id].gallery;
-        let newArr = arr.map((img)=>{
+        let newArr = arr.map((img) => {
             return {
                 width: img.width,
                 height: img.height,
-                src: pub +'/img/'+this.props.id+"/"+img.src
+                src: pub + '/img/' + this.props.id + "/" + img.src
             };
         });
-        this.setState({gallery: newArr});
+        this.setState({gallery: newArr, recommended: this.randomProjects()});
     }
-    randomProjects(){
-        let keys = Object.keys(data);
-        let proj = keys[Math.floor(Math.random()*keys.length)];
-        //TODO
+    shouldComponentUpdate(nextProps, nextState, nextContext) {
+        return nextProps.id !== this.props.id || nextState !== this.state;
+    }
+    randomProjects() {
+        let rec = [];
+        let keys = Object.keys(data["Project"]);
+        let index = keys.indexOf(this.props.id);
+        if (index > -1) {
+            keys.splice(index, 1);
+        }
+        //remove the current project so it's not selected as a recommended project
+        for (let i = 0; i < 3; i++) {
+            let proj = keys[Math.floor(Math.random() * keys.length)];
+            rec.push(<Card type={"Project"} name={proj} key={i}/>);
+            let index = keys.indexOf(proj);
+            if (index > -1) {
+                keys.splice(index, 1);
+            }
+        }
+        return(rec);
+    }
 
-    }
     render() {
 
         let videoElement = null;
-        if(this.state.video){
-            videoElement = <div><h2>Video:</h2><div className={"vid-container"}>
-                <iframe className="resp-iframe" src={this.state.video} frameBorder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen/></div></div>;
+        if (this.state.video) {
+            videoElement = <div><h2>Video:</h2>
+                <div className={"vid-container"}>
+                    <iframe className="resp-iframe" src={this.state.video} frameBorder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen/>
+                </div>
+            </div>;
         }
         return (
             <div>
                 <div>
                     <h2>Project:</h2>
                     <h1>{this.state.title.toUpperCase()}</h1>
-                    <ParaPicture img={pub +'/img/'+this.props.id+"/"+this.state.img} para={this.state.intro}/>
+                    <ParaPicture img={pub + '/img/' + this.props.id + "/" + this.state.img} para={this.state.intro}/>
                 </div>
                 <div>
                     <h2>How it Works:</h2>
@@ -87,9 +104,9 @@ class Project extends Component {
                 <div>
                     <h2>What I learned:</h2>
                     <ul>
-                    {this.state.learned.map((item) => {
-                        return (<li>{item}</li>);
-                    })}
+                        {this.state.learned.map((item) => {
+                            return (<li>{item}</li>);
+                        })}
                     </ul>
                 </div>
                 {videoElement}
@@ -98,12 +115,14 @@ class Project extends Component {
                     <Gallery
                         photos={this.state.gallery}
                         direction={"column"}
-                        onClick={() => {this.setState({viewerOpen: true});}}
+                        onClick={() => {
+                            this.setState({viewerOpen: true});
+                        }}
                     />
                 </div>
                 <div>
                     <h2>More Projects: </h2>
-                    {this.randomProjects()}
+                    {this.state.recommended}
                 </div>
             </div>
         );
