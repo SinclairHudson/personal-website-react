@@ -1,15 +1,11 @@
-import React, {Component, useCallback} from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
 import data from './Data.json';
+import ParaPicture from "./ParaPicture";
+import Gallery from "react-photo-gallery";
+import Card from "./Card";
 
 const pub = process.env.PUBLIC_URL;
-import ImageGallery from './ImageGallery.js'
-import ParaPicture from "./ParaPicture";
-import Opener from "./Opener";
-import Gallery from "react-photo-gallery";
-import Carousel, {Modal, ModalGateway} from "react-images";
-import Card from "./Card";
 
 
 class Project extends Component {
@@ -56,9 +52,22 @@ class Project extends Component {
         });
         this.setState({gallery: newArr, recommended: this.randomProjects()});
     }
-    shouldComponentUpdate(nextProps, nextState, nextContext) {
-        return nextProps.id !== this.props.id || nextState !== this.state;
+
+    componentWillReceiveProps(nextProps, nextContext) {
+        if(this.props.id !== nextProps.id){
+            this.setState(data.Project[nextProps.id]);
+            let arr = data.Project[nextProps.id].gallery;
+            let newArr = arr.map((img) => {
+                return {
+                    width: img.width,
+                    height: img.height,
+                    src: pub + '/img/' + nextProps.id + "/" + img.src
+                };
+            });
+            this.setState({gallery: newArr});
+        }
     }
+
     randomProjects() {
         let rec = [];
         let keys = Object.keys(data["Project"]);
@@ -79,7 +88,6 @@ class Project extends Component {
     }
 
     render() {
-
         let videoElement = null;
         if (this.state.video) {
             videoElement = <div><h2>Video:</h2>

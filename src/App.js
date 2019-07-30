@@ -1,35 +1,18 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Navbar from "./Navbar";
 import Opener from "./Opener";
 import Card from "./Card";
-import PropTypes from 'prop-types';
-import {CSSTransitionGroup} from 'react-transition-group'
 import NavButton from "./NavButton";
 import Footer from "./Footer";
 import Project from "./Project";
 import Experience from "./Experience";
 import ProjectPage from "./ProjectPage"
-import Line from "./Line"
 import ExperiencePage from "./ExperiencePage"
-import {Background, Parallax} from 'react-parallax';
 import {ParallaxProvider} from 'react-scroll-parallax';
-import {
-    BrowserRouter as Router,
-    Route,
-    Link,
-    Redirect,
-    Switch, withRouter
-} from 'react-router-dom';
+import {BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom';
 
-const pub = process.env.PUBLIC_URL;
-
-import createHistory from 'history/createBrowserHistory';
-import {createBrowserHistory} from "history";
 import ScrollToTop from "./ScrollToTop";
 
-const history = createHistory();
 
 class App extends Component {
     constructor(props) {
