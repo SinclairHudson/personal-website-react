@@ -38,8 +38,8 @@ class ParaPicture extends Component {
                 <div className={"Image"}>
                     <img src={pub + "/img/svg/Yellow_icon.svg"} alt={"yellow circle"}
                          style={{zIndex: -1, position: 'absolute', width: "100%",
-                             top: 50 * Math.sin(this.state.offset/400 + 4.2) - 15,
-                             left: 50 * Math.sin(this.state.offset/500 + 4.7) - 15
+                             top: 50 * Math.cos(this.state.offset/400 + 4.2) - 15,
+                             left: 50 * Math.cos(this.state.offset/500 + 4.7) - 15
                          }}/>
                     <img src={pub + "/img/svg/outline.svg"} alt={"circle outline"}
                          style={{zIndex: -1, position: 'absolute', width: "100%",

@@ -28,6 +28,7 @@ h2{
 .Card{
   display: flex;
   padding: 5%;
+  float: left;
   background-color: #ffffff;
   width: 90%;
   margin-bottom: 5%;
@@ -155,7 +156,14 @@ a{
 }
 @media screen and (max-width: 1440px) {
   .App {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .Card .Text{
+    width: 100%;
+    padding: 0%;
+  }
+  .Card .Image{
+    width: 100%;
   }
 }
