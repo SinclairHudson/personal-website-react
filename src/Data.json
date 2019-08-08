@@ -286,6 +286,40 @@
                 }
             ],
             "howItWorks": "I don't like being slowed down by hardware, so my rig is pretty beefy. It has a GTX 1070 graphics card, which is capable of training large neural networks. I have an intel 8600K CPU, which is a 6 core processor; it's great for multitasking. Couple that with a fast solid state drive, and I've got a pretty fast system."
+        },
+        "addingsoftware": {
+            "title": "ScoutTech Software",
+            "dateStart": "April 2017",
+            "dataEnd": "June 2017",
+            "blurb": "Software created for ScoutTech Outfitters to automate the adding of products to various databases.",
+            "img": "4.jpg",
+            "tags": [
+                "Java",
+                "Automation"
+            ],
+            "video": null,
+            "url": "/project/addingsoftware",
+            "intro": "In the spring of 2017, I was getting pretty good at Java in preparation for the AP exam, and I was looking to apply what I had been studying. At the same time, I was given the boring task of adding products to our database at ScoutTech. The database was slow, mistakes were frequent, a ton of steps were repeated, and it was mind-numbing. So, after doing a bunch of research on the project, I convinced my boss to pay me to develop a desktop that could add products quickly. Over a year later, that same system is being used to add products over twice as fast as the traditional method.",
+
+            "learned": [
+                "Agile Development, working closely with the client",
+                "Writing and reading large amounts of data in CSV files in Java",
+                "Object Oriented Programming experience in the real world",
+                "Java Swing UI"
+            ],
+            "gallery": [
+                {
+                    "src": "1.jpg",
+                    "width": "699",
+                    "height": "710"
+                },
+                {
+                    "src": "2.jpg",
+                    "width": "540",
+                    "height": "960"
+                }
+            ],
+            "howItWorks": "The design is pretty simple. ChannelAdvisor, the database, accepts two forms of products: Standards and Bundles. Standards are for stand-alone products, like tents, stoves, shovels, etc. Bundles are for very similar products, like apparel that is the same except for size and colour. In each bundle, there is a parent and multiple children. The child products inherit most of their information from the parent. After the user of the Java Program chooses Bundle or Standard, They are greeted with the information page. There are around 12 fields that need to be filled out to make a valid product. When they are filled out, the program stores every product as an object in the system memory. The user can continue to create products and they will be saved in the same way. Once the user clicks “export” on the main page, the program takes all the products in its memory and writes them to a CSV file according to the Channeladvisor formatting rules. The resulting CSV file can then be uploaded directly into ChannelAdvisor."
         }
     },
     "Experience": {
