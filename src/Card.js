@@ -29,35 +29,48 @@ class Card extends Component {
         //get the right project information loaded in.
         this.setState(data[this.props.type][this.props.name]);
     }
-
+    wrapTags(){
+        if (window.innerWidth < 1441) {
+            return null
+        }
+        else {
+            return (
+                <div className={"Tags"}>{this.generateTags()}</div>
+            );
+        }
+    }
     generateTags() {
-        return ((this.state.tags).map((tag) => (
-                <div className={"Tag"}>
-                    {tag}
-                </div>
-            ))
-        );
+        if (window.innerWidth < 1441) {
+            return null
+        }
+        else {
+            return ((this.state.tags).map((tag) => (
+                    <div className={"Tag"}>
+                        {tag}
+                    </div>
+                ))
+            );
+        }
     }
 
     render() {
         return (
             <Fade bottom>
-                <div className="Card">
-                    <div className={"Text"}>
-                        <h2>{this.props.type}</h2>
-                        <h1>{this.state.title}</h1>
-                        <p>
-                            {this.state.blurb}
-                        </p>
-                        <div className={"Tags"}>{this.generateTags()}</div>
-                        <Link to={"/project/" + this.props.name}>
-                            See More
-                        </Link>
+                <Link to={"/"+ this.props.type.toLowerCase()+"/" + this.props.name}>
+                    <div className="Card">
+                        <div className={"Text"}>
+                            <h2>{this.props.type}</h2>
+                            <h1>{this.state.title}</h1>
+                            <p>
+                                {this.state.blurb}
+                            </p>
+                            {this.wrapTags()}
+                        </div>
+                        <div className={"Image"}>
+                            <img src={pub + '/img/' + this.props.name + '/' + this.state.img} alt={this.state.name}/>
+                        </div>
                     </div>
-                    <div className={"Image"}>
-                        <img src={pub + '/img/' + this.props.name + '/' + this.state.img} alt={this.state.name}/>
-                    </div>
-                </div>
+                </Link>
             </Fade>
         );
     }

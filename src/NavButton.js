@@ -5,9 +5,11 @@ import {
     BrowserRouter as Router,
     Route,
     Link,
+    NavLink,
     Redirect,
     Switch
 } from 'react-router-dom';
+import resume from './Resume Jan 2019.pdf'
 
 class NavButton extends Component {
     constructor(props) {
@@ -16,12 +18,20 @@ class NavButton extends Component {
     }
 
     render() {
-        return (
-            <Link to={'/' + this.props.location.toLowerCase()}>
+        if(this.props.location === "Resume"){
+            return(
+            <a href={resume}>
                 <div className="NavButton">
                     {this.props.location}
                 </div>
-            </Link>
+            </a>);
+        }
+        return (
+            <NavLink to={'/' + this.props.location.toLowerCase()} activeClassName={'active'}>
+                <div className="NavButton">
+                    {this.props.location}
+                </div>
+            </NavLink>
         );
     }
 }

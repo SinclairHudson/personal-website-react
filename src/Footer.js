@@ -6,6 +6,7 @@ class Footer extends Component {
     render() {
         return (
             <div>
+                <hr/>
                 <div className="Footer">
                     <h2>Contact</h2>
                     hudson.sinclair00 at gmail.com

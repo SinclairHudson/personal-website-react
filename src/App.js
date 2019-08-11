@@ -6,10 +6,16 @@ import NavButton from "./NavButton";
 import Footer from "./Footer";
 import Project from "./Project";
 import Experience from "./Experience";
-import ProjectPage from "./ProjectPage"
-import ExperiencePage from "./ExperiencePage"
+import ProjectPage from "./ProjectPage";
+import ExperiencePage from "./ExperiencePage";
+import Contact from "./Contact";
 import {ParallaxProvider} from 'react-scroll-parallax';
-import {BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Link, Route, Switch, Redirect} from 'react-router-dom';
+import { Document, Page, pdfjs} from 'react-pdf';
+import resume from './Resume Jan 2019.pdf'
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
 
 import ScrollToTop from "./ScrollToTop";
 
@@ -72,12 +78,11 @@ class App extends Component {
                     {/*     style={{*/}
                     {/*         zIndex: -1, position: 'absolute',*/}
                     {/*         top: '30%',*/}
-                    {/*         left: Math.min(this.state.offset * 2 + 200)*/}
                     {/*     }}/>*/}
                     <Router onUpdate={() => window.scrollTo(0, 0)}>
                         <ScrollToTop> {/*Added because router preserves scroll position*/}
                             <div className="NavBar">
-                                <img className="logo" src={pub + "/img/svg/LOGO.svg"} alt={"Logo"}/>
+                                {/*<img className="logo" src={pub + "/img/svg/LOGO.svg"} alt={"Logo"}/>*/}
                                 <Link to={'/'}>
                                     <div className="NavButton">
                                         Home
@@ -116,6 +121,7 @@ class App extends Component {
                                                />
                                            );
                                        }}/>
+                                <Route path='/contact' component={Contact}/>
                                 {/*default if something goes wrong */}
                                 <Route render={({location}) => (
                                     <div>

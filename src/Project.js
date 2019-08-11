@@ -28,7 +28,7 @@ class Project extends Component {
                 "0.jpg"
             ],
             video: null,
-            url: "/project/ajax",
+            url: "/Project/wawanesa",
             intro: "Intro",
             learned: [
                 "Learned0",

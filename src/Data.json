@@ -61,7 +61,6 @@
             "video": null,
             "url": "/project/tripwire",
             "intro": "This was a project I created with three of my friends for EngHack 2019. We decided to tackle a light problem: we were all missing our public transit stops because we were reading, sleeping, or on our phones. Obviously, we needed a way to alert us when we got close to a bus stop or specific location. We were all new to React Native, so it was pretty rough, but we all had a good time.",
-
             "learned": [
                 "React Native, specifically navigation in React Native",
                 "Advanced Git VC to get four devs working together on one project",
@@ -99,7 +98,7 @@
                     "height": "3456"
                 }
             ],
-            "howItWorks": "The app uses the GPS in the phone for it's main functionality. The user can set certain coordinates as waypoints, and specify what kind of alarm should trigger when the phone came within a specified radius of the point."
+            "howItWorks": "The app uses the GPS in the phone for its main functionality. The user can set certain coordinates as waypoints, and specify what kind of alarm should trigger when the phone came within a specified radius of the point."
         },
         "website": {
             "title": "This Website",
@@ -188,7 +187,7 @@
             "intro": "During my Grade 12 Year, I had the wonderful opportunity to work with an ex-Hydro One electrical engineer, James Whatley, in my Computer Engineering 12 Class. We learned and then built voltage regulation circuits, amperage regulations circuits, full-wave rectifiers, but we were short on time at the end of the year. Eager to learn more, I talked a bit with my instructor and we agreed to meet for a few days in the early summer to work on another project: the portable speaker.",
             "url": "/project/speaker",
             "video": "https://www.youtube.com/embed/BCQs8cIpOGc",
-            "learned":[
+            "learned": [
                 "Implementing and testing sequence classification neural networks",
                 "Google Tensorflow, NumPy, Pyaudio, and many other small libraries",
                 "Patience",
@@ -256,7 +255,6 @@
             "video": null,
             "url": "/project/custompc",
             "intro": "Over the last few years, I have slowly built and upgraded my personal computer. The project started in grade 10 when I dissected a few old computers from my father’s workplace. From there, I slowly purchased and salvaged parts for the the next two years, arriving at this system. Along the way, I learned a great deal about how PCs work, and how to repair them. I have also helped a few friends out with building their own systems. My current build dual-boots Windows and Ubuntu.",
-
             "learned": [
                 "How all components of a computer are installed, and how they all work together",
                 "How to design a cost-effective build that has all the features I need",
@@ -300,7 +298,6 @@
             "video": null,
             "url": "/project/addingsoftware",
             "intro": "In the spring of 2017, I was getting pretty good at Java in preparation for the AP exam, and I was looking to apply what I had been studying. At the same time, I was given the boring task of adding products to our database at ScoutTech. The database was slow, mistakes were frequent, a ton of steps were repeated, and it was mind-numbing. So, after doing a bunch of research on the project, I convinced my boss to pay me to develop a desktop that could add products quickly. Over a year later, that same system is being used to add products over twice as fast as the traditional method.",
-
             "learned": [
                 "Agile Development, working closely with the client",
                 "Writing and reading large amounts of data in CSV files in Java",
@@ -339,6 +336,76 @@
             "url": "/experience/watonomous",
             "intro": "I am currently on the Perception team, which is the team's front line. We take in the data from cameras, LIDAR, and radar and attempt to process that data to pull out meaningful features.",
             "learned": [
+                "OpenCV masking, searching",
+                "Training YOLOv3 on a traffic light dataset",
+                "Collaboration and Version Control on a huge, highly integrated codebase",
+                "ROS",
+                "OpenVino",
+                "Managing a small group of developers to complete a larger goal",
+                "Code Reviewing",
+                "Two-week build, test, deploy cycles with a large team and system"
+            ],
+            "gallery": [
+                {
+                    "src": "1.jpg",
+                    "width": "3456",
+                    "height": "4608"
+                },
+                {
+                    "src": "3.jpg",
+                    "width": "3456",
+                    "height": "4608"
+                },
+                {
+                    "src": "2.jpg",
+                    "width": "3456",
+                    "height": "4608"
+                },
+                {
+                    "src": "4.jpg",
+                    "width": "3456",
+                    "height": "4608"
+                }
+            ],
+            "description": "I've worked on a few systems within perception. I experimented in railroad bar detection, and I've trained a YOLOv3 model on Traffic Light detection.",
+            "custom": [
+                {
+                    "header": "Technical Lead",
+                    "body": "My current position in the team is that of a Technical Lead on the Perception Sub-team. I'm assigned a project, such as cyclist detection, road line detection, etc. I then lead a small group of core members to accomplish said task. This usually involves processing data, training a neural network, and evaluating it. I'm also responsible for keeping up to date on research in the machine vision space, and understanding how the whole watonomous codebase works. This means that I do a lot of code reviews, pull requests, and debugging."
+                }
+            ]
+        },
+        "truenorth": {
+            "title": "True North 2019",
+            "dateStart": "June 2019",
+            "dataEnd": "June 2019",
+            "blurb": "Technology for good conference in Kitchener, Ontario.",
+            "img": "0.jpg",
+            "tags": [
+                "Ethics in Tech"
+            ],
+            "url": "/experience/truenorth",
+            "intro": "I attended The True North Tech Conference with my friends from the Wawanesa Insurance innovation outpost. The conference was hosted by Communitech, in Kitchener. There conference focused around tech for good. Privacy, security, implications of new technology. ",
+            "learned": [
+                "Ethics in technology",
+                "Providing digital solutions to social issues"
+            ],
+            "gallery": [
+                {
+                    "src": "1.jpg",
+                    "width": "3456",
+                    "height": "4608"
+                },
+                {
+                    "src": "3.jpg",
+                    "width": "3456",
+                    "height": "4608"
+                },
+                {
+                    "src": "2.jpg",
+                    "width": "3456",
+                    "height": "4608"
+                }
             ],
             "description": "I've worked on a few systems within perception. I experimented in railroad bar detection, and I've trained a YOLOv3 model on Traffic Light detection."
         },
@@ -351,8 +418,40 @@
             "tags": [
                 "React",
                 "Frontend",
-                "Design",
-                "Illustrator"
+                "NLP",
+                "BERT and Transformers"
+            ],
+            "gallery": [
+                {
+                    "src": "1.jpg",
+                    "width": "1080",
+                    "height": "2340"
+                },
+                {
+                    "src": "3.jpg",
+                    "width": "1080",
+                    "height": "2340"
+                },
+                {
+                    "src": "2.jpg",
+                    "width": "1080",
+                    "height": "2340"
+                },
+                {
+                    "src": "0.jpg",
+                    "width": "320",
+                    "height": "320"
+                },
+                {
+                    "src": "4.jpg",
+                    "width": "3456",
+                    "height": "4608"
+                },
+                {
+                    "src": "5.jpg",
+                    "width": "4608",
+                    "height": "3456"
+                }
             ],
             "url": "/experience/wawanesa"
         }
