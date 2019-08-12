@@ -35,12 +35,7 @@ class Experience extends Component {
                 "Learned1",
                 "Learned2"
             ],
-            custom: [
-                {
-                    header: "Lorem Ipsum",
-                    body: "Body paragraph"
-                }
-            ],
+            custom: [],
             recommended: []
         };
     }
@@ -74,12 +69,16 @@ class Experience extends Component {
     }
 
     generateCustoms() {
-        return this.state.custom.map((item) => {
-            return (<div>
-                <h2>{item.header}</h2>
-                <div>{item.body}</div>
-            </div>);
-        })
+        if (this.state.custom.length === 0) {
+            return null;
+        } else {
+            return this.state.custom.map((item) => {
+                return (<div>
+                    <h2>{item.header}</h2>
+                    <div>{item.body}</div>
+                </div>);
+            })
+        }
 
     }
 

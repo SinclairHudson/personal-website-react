@@ -12,6 +12,7 @@ import Contact from "./Contact";
 import {ParallaxProvider} from 'react-scroll-parallax';
 import {BrowserRouter as Router, Link, Route, Switch, Redirect} from 'react-router-dom';
 import { Document, Page, pdfjs} from 'react-pdf';
+import Stats from "./Stats";
 import resume from './Resume Jan 2019.pdf'
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -100,6 +101,7 @@ class App extends Component {
                                 <Route exact path='/' render={() => (
                                     <div>
                                         <Opener/>
+                                        <Stats/>
                                         <Card type={"Project"} name={"ajax"}/>
                                         <Card type={"Experience"} name={"watonomous"}/>
                                     </div>

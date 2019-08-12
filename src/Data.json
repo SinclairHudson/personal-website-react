@@ -290,7 +290,7 @@
             "dateStart": "April 2017",
             "dataEnd": "June 2017",
             "blurb": "Software created for ScoutTech Outfitters to automate the adding of products to various databases.",
-            "img": "4.jpg",
+            "img": "0.jpg",
             "tags": [
                 "Java",
                 "Automation"
@@ -314,6 +314,11 @@
                     "src": "2.jpg",
                     "width": "540",
                     "height": "960"
+                },
+                {
+                    "src": "3.jpg",
+                    "width": "1413",
+                    "height": "868"
                 }
             ],
             "howItWorks": "The design is pretty simple. ChannelAdvisor, the database, accepts two forms of products: Standards and Bundles. Standards are for stand-alone products, like tents, stoves, shovels, etc. Bundles are for very similar products, like apparel that is the same except for size and colour. In each bundle, there is a parent and multiple children. The child products inherit most of their information from the parent. After the user of the Java Program chooses Bundle or Standard, They are greeted with the information page. There are around 12 fields that need to be filled out to make a valid product. When they are filled out, the program stores every product as an object in the system memory. The user can continue to create products and they will be saved in the same way. Once the user clicks “export” on the main page, the program takes all the products in its memory and writes them to a CSV file according to the Channeladvisor formatting rules. The resulting CSV file can then be uploaded directly into ChannelAdvisor."
@@ -421,6 +426,8 @@
                 "NLP",
                 "BERT and Transformers"
             ],
+            "custom": null,
+            "video": null,
             "gallery": [
                 {
                     "src": "1.jpg",
@@ -454,6 +461,55 @@
                 }
             ],
             "url": "/experience/wawanesa"
+        },
+        "camping": {
+            "title": "Camping Trips",
+            "dateStart": "Super Early",
+            "dataEnd": "Present",
+            "blurb": "One of my more intense hobbies is camping, specifically canoe tripping.",
+            "img": "0.jpg",
+            "tags": [
+                "Planning",
+                "Management",
+                "Communication",
+                "White Water Canoeing"
+            ],
+            "url": "/experience/camping",
+            "intro": "Ever since I was little, I was going on camping trips with my family; my father is an outdoor enthusiast. My family goes on a canoe trip just about every summer, and recently we’ve been doing whitewater paddling down various rivers in Northern Ontario. Through the Scouts Canada program, I’ve also been exposed to lightweight backpacking trips and winter camping.",
+            "learned": [
+                "Quick Decision making and communication skills",
+                "Logistics and planning",
+                "Teamwork and perseverance"
+            ],
+            "gallery": [
+                {
+                    "src": "1.jpg",
+                    "width": "5312",
+                    "height": "2988"
+                },
+                {
+                    "src": "3.jpg",
+                    "width": "2736",
+                    "height": "3648"
+                },
+                {
+                    "src": "2.jpg",
+                    "width": "2448",
+                    "height": "2448"
+                },
+                {
+                    "src": "4.jpg",
+                    "width": "540",
+                    "height": "960"
+                }
+            ],
+            "custom": [
+                {
+                    "header": "Most Recent Trip",
+                    "body": "My most recent trip was a 12-Day canoe trip down the Missinaibi River. We went from Dog Lake to Mattice, with a lot of rain and whitewater in between. Below is a video I made from the GoPro footage and pictures taken on the trip. I edited it all in Adobe Premiere Pro, and there's a longer version for those interested in all the whitewater."
+                }
+            ],
+            "video": "https://www.youtube.com/embed/jbu0bRDEHXU"
         }
     }
 }
