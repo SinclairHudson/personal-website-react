@@ -50,12 +50,14 @@ class Project extends Component {
                 src: pub + '/img/' + this.props.id + "/" + img.src
             };
         });
-        this.setState({gallery: newArr, recommended: this.randomProjects()});
+        this.setState({gallery: newArr});
+        this.randomProjects(this.props.id);
     }
 
     componentWillReceiveProps(nextProps, nextContext) {
         if(this.props.id !== nextProps.id){
             this.setState(data.Project[nextProps.id]);
+            this.randomProjects(nextProps.id);
             let arr = data.Project[nextProps.id].gallery;
             let newArr = arr.map((img) => {
                 return {
@@ -68,10 +70,10 @@ class Project extends Component {
         }
     }
 
-    randomProjects() {
+    randomProjects(exclude) {
         let rec = [];
         let keys = Object.keys(data["Project"]);
-        let index = keys.indexOf(this.props.id);
+        let index = keys.indexOf(exclude);
         if (index > -1) {
             keys.splice(index, 1);
         }
@@ -84,7 +86,7 @@ class Project extends Component {
                 keys.splice(index, 1);
             }
         }
-        return(rec);
+        this.setState({recommended: rec})
     }
 
     render() {

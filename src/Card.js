@@ -29,6 +29,10 @@ class Card extends Component {
         //get the right project information loaded in.
         this.setState(data[this.props.type][this.props.name]);
     }
+    componentWillReceiveProps(nextProps, nextContext) {
+        this.setState(data[nextProps.type][nextProps.name]);
+    }
+
     wrapTags(){
         if (window.innerWidth < 1441) {
             return null

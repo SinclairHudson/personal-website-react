@@ -41,6 +41,8 @@ class Experience extends Component {
     }
 
     componentDidMount() {
+        console.log("bravo");
+
         this.setState(data.Experience[this.props.id]);
         let arr = data.Experience[this.props.id].gallery;
         let newArr = arr.map((img) => {
@@ -50,11 +52,14 @@ class Experience extends Component {
                 src: pub + '/img/' + this.props.id + "/" + img.src
             };
         });
-        this.setState({gallery: newArr, recommended: this.randomExperiences()});
+        this.setState({gallery: newArr});
+        this.randomExperiences(this.props.id);
     }
 
     componentWillReceiveProps(nextProps, nextContext) {
         if (this.props.id !== nextProps.id) {
+            console.log(nextProps.id);
+            this.randomExperiences(nextProps.id);
             this.setState(data.Experience[nextProps.id]);
             let arr = data.Experience[nextProps.id].gallery;
             let newArr = arr.map((img) => {
@@ -65,6 +70,7 @@ class Experience extends Component {
                 };
             });
             this.setState({gallery: newArr});
+
         }
     }
 
@@ -82,10 +88,10 @@ class Experience extends Component {
 
     }
 
-    randomExperiences() {
+    randomExperiences(exclude) {
         let rec = [];
         let keys = Object.keys(data["Experience"]);
-        let index = keys.indexOf(this.props.id);
+        let index = keys.indexOf(exclude);
         if (index > -1) {
             keys.splice(index, 1);
         }
@@ -98,7 +104,7 @@ class Experience extends Component {
                 keys.splice(index, 1);
             }
         }
-        return (rec);
+        this.setState({recommended: rec});
     }
 
     render() {
