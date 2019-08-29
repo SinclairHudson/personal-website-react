@@ -1,5 +1,52 @@
 {
     "Project": {
+        "conduct": {
+            "title": "Conduct",
+            "dateStart": "June 2019",
+            "dataEnd": "August 2019",
+            "blurb": "This project allows me to control audio playback on my computer by making gestures with my hands. It uses a YOLOv3 algorithm on webcam input.",
+            "img": "0.jpg",
+            "tags": [
+                "TensorFlow 2.0",
+                "Computer Vision",
+                "YOLOv3",
+                "OpenLabeling",
+                "OpenCV"
+            ],
+            "gallery": [
+                {
+                    "src": "0.jpg",
+                    "width": "320",
+                    "height": "320"
+                },
+                {
+                    "src": "1.jpg",
+                    "width": "1347",
+                    "height": "973"
+                },
+                {
+                    "src": "2.jpg",
+                    "width": "1514",
+                    "height": "497"
+                }
+            ],
+            "video": "https://www.youtube.com/embed/CPZNZpvM5Xc",
+            "url": "/project/conduct",
+            "intro": "I’m always listening to music while I work, and I thought it would be cool to control my music through very intuitive hand gestures. This is one case where voice recognition gets unreliable; if you’re blasting music, the microphone has trouble picking up your commands. So, you use your hands to control the computer, like a conductor directs a symphony.",
+            "learned": [
+                "YOLOv3",
+                "Tuning hyperparameters",
+                "Learning rate decay and warmup epochs to help a network converge",
+                "Processing and displaying outputs using OpenCV"
+            ],
+            "custom": [
+                {
+                    "header": "What's Next?",
+                    "body": "There are a lot of things that could be added to this project fairly easily. I could mess around with the hyperparameters a little bit more to improve accuracy, I could photograph and tag more data, and I could add more gestures, like one for skip track. Top priority would be to increase the size of the dataset. I created and tagged the dataset myself, in one afternoon, in the same room, in the same clothes. Needless to say, the system isn’t really robust, since it’s only trained on 1500 similar frames. Sigh… tagging computer vision data is such a bore, but that’s the only surefire way to improve my model."
+                }
+            ],
+            "howItWorks": "The system is pretty easy to understand on a high level. There’s an infinite loop, taking images from the webcam that’s attached to my wall, and feeding them to a neural network. The YOLOv3 network is nice and fast, with enough accuracy to pick up my hands and classify them. The network not only detects where the hands are, but classifies them as one of 6 hand states: palm, back, flat, vertical, fist, and neutral. After the network has given its predictions, it’s just a matter of simple logic to perform the audio modifications through terminal commands."
+        },
         "ajax": {
             "title": "AJAX ASR",
             "dateStart": "Sept 2018",
@@ -38,13 +85,15 @@
             ],
             "video": null,
             "url": "/project/ajax",
-            "intro": "This is my longest ongoing project, which all started with a frustration with a horrible voice recognition library. I decided to give it a shot myself, using Google TensorFlow Maching Learning. Currently, I have some parts working with a sub-optimal accuracy, and I'm looking into different models and methods to achieve great voice recognition. You can find all my code on my GitHub, right here.",
+            "intro": "This is my longest TensorFlow project, which all started with a frustration with a horrible voice recognition library. I decided to give it a shot myself, using Google TensorFlow Maching Learning. Currently, I have some parts working with a sub-optimal accuracy, and I'm looking into different models and methods to achieve great voice recognition. You can find all my code on my GitHub, right here.",
             "learned": [
                 "Implementing and testing sequence classification neural networks",
                 "Google Tensorflow, NumPy, Pyaudio, and many other small libraries",
                 "Patience",
                 "A Research, Build, Test cycle to complete a project"
             ],
+            "custom": [],
+
             "howItWorks": "Currently, I've only trained a word classifier working, capable at differentiating 18 different words apart, with about 92% accuracy. The idea was to determine where the word breaks were, partition the sound file into words, and then classify from there. However, with a low classification accuracy, I'm currently looking into a new approach, using a sequence to sequence LSTM network to turn the sound byte into phenomes first. The good news is that I already have the data; I wrote a python script that automatically labels and records my voice, making data collection easy."
         },
         "tripwire": {
@@ -98,6 +147,8 @@
                     "height": "3456"
                 }
             ],
+            "custom": [],
+
             "howItWorks": "The app uses the GPS in the phone for its main functionality. The user can set certain coordinates as waypoints, and specify what kind of alarm should trigger when the phone came within a specified radius of the point."
         },
         "website": {
@@ -132,6 +183,8 @@
                 "Creating dynamic websites, in which things move, slide, and interact",
                 "Project Structuring for large websites"
             ],
+            "custom": [],
+
             "howItWorks": "This website is built with create-react-app, and is highly abstracted. All the data is in one file, and all the styling and structure is in React Components. All the pages are procedurally generated, so if I want to add a project, I just have to put the information into the data file. I used libraries for the image gallery and the Parallax banners, but everything else I coded myself. While a lot of people have told me that I shouldn't re-invent the wheel, I find value in learning how to build these things by myself."
         },
         "speaker": {
@@ -188,60 +241,18 @@
             "url": "/project/speaker",
             "video": "https://www.youtube.com/embed/BCQs8cIpOGc",
             "learned": [
-                "Implementing and testing sequence classification neural networks",
-                "Google Tensorflow, NumPy, Pyaudio, and many other small libraries",
-                "Patience",
-                "A Research, Build, Test cycle to complete a project"
+                "Operational Amplifier circuits",
+                "Using an oscilliscope to debug physical circuits",
+                "Audio signal processing, filtering, and amplifying",
+                "Current and Voltage limiting circuits",
+                "Soldering complex circuits from schematics"
+
             ],
+            "custom": [],
+
             "howItWorks": "Currently, I've only trained a word classifier working, capable at differentiating 18 different words apart, with about 92% accuracy. The idea was to determine where the word breaks were, partition the sound file into words, and then classify from there. However, with a low classification accuracy, I'm currently looking into a new approach, using a sequence to sequence LSTM network to turn the sound byte into phenomes first. The good news is that I already have the data; I wrote a python script that automatically labels and records my voice, making data collection easy."
         },
-        "ajax": {
-            "title": "AJAX ASR",
-            "dateStart": "Sept 2018",
-            "dataEnd": "Feb 2019",
-            "blurb": "Voice Recognition system built with Google Tensorflow.",
-            "img": "0.jpg",
-            "tags": [
-                "TensorFlow",
-                "NLP",
-                "NumPy",
-                "Tensorboard",
-                "Keras",
-                "LSTM"
-            ],
-            "gallery": [
-                {
-                    "src": "0.jpg",
-                    "width": "320",
-                    "height": "320"
-                },
-                {
-                    "src": "1.jpg",
-                    "width": "1527",
-                    "height": "472"
-                },
-                {
-                    "src": "2.jpg",
-                    "width": "3264",
-                    "height": "4352"
-                },
-                {
-                    "src": "3.jpg",
-                    "width": "361",
-                    "height": "286"
-                }
-            ],
-            "video": null,
-            "url": "/project/ajax",
-            "intro": "This is my longest ongoing project, which all started with a frustration with a horrible voice recognition library. I decided to give it a shot myself, using Google TensorFlow Maching Learning. Currently, I have some parts working with a sub-optimal accuracy, and I'm looking into different models and methods to achieve great voice recognition. You can find all my code on my GitHub, right here.",
-            "learned": [
-                "Implementing and testing sequence classification neural networks",
-                "Google Tensorflow, NumPy, Pyaudio, and many other small libraries",
-                "Patience",
-                "A Research, Build, Test cycle to complete a project"
-            ],
-            "howItWorks": "Currently, I've only trained a word classifier working, capable at differentiating 18 different words apart, with about 92% accuracy. The idea was to determine where the word breaks were, partition the sound file into words, and then classify from there. However, with a low classification accuracy, I'm currently looking into a new approach, using a sequence to sequence LSTM network to turn the sound byte into phenomes first. The good news is that I already have the data; I wrote a python script that automatically labels and records my voice, making data collection easy."
-        },
+
         "custompc": {
             "title": "Custom PC",
             "dateStart": "June 2016",
@@ -283,6 +294,7 @@
                     "height": "4063"
                 }
             ],
+            "custom": [],
             "howItWorks": "I don't like being slowed down by hardware, so my rig is pretty beefy. It has a GTX 1070 graphics card, which is capable of training large neural networks. I have an intel 8600K CPU, which is a 6 core processor; it's great for multitasking. Couple that with a fast solid state drive, and I've got a pretty fast system."
         },
         "addingsoftware": {
@@ -321,6 +333,8 @@
                     "height": "868"
                 }
             ],
+            "custom": [],
+
             "howItWorks": "The design is pretty simple. ChannelAdvisor, the database, accepts two forms of products: Standards and Bundles. Standards are for stand-alone products, like tents, stoves, shovels, etc. Bundles are for very similar products, like apparel that is the same except for size and colour. In each bundle, there is a parent and multiple children. The child products inherit most of their information from the parent. After the user of the Java Program chooses Bundle or Standard, They are greeted with the information page. There are around 12 fields that need to be filled out to make a valid product. When they are filled out, the program stores every product as an object in the system memory. The user can continue to create products and they will be saved in the same way. Once the user clicks “export” on the main page, the program takes all the products in its memory and writes them to a CSV file according to the Channeladvisor formatting rules. The resulting CSV file can then be uploaded directly into ChannelAdvisor."
         }
     },

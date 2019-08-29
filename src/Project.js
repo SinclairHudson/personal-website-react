@@ -36,7 +36,8 @@ class Project extends Component {
                 "Learned2"
             ],
             howItWorks: "How It Works",
-            recommended:[]
+            recommended:[],
+            custom: []
         };
     }
 
@@ -67,6 +68,18 @@ class Project extends Component {
                 };
             });
             this.setState({gallery: newArr});
+        }
+    }
+    generateCustoms() {
+        if (this.state.custom.length === 0) {
+            return null;
+        } else {
+            return this.state.custom.map((item) => {
+                return (<div>
+                    <h2>{item.header}</h2>
+                    <div>{item.body}</div>
+                </div>);
+            })
         }
     }
 
@@ -120,6 +133,7 @@ class Project extends Component {
                     </ul>
                 </div>
                 {videoElement}
+                {this.generateCustoms()}
                 <div>
                     <h2>Pictures:</h2>
                     <Gallery
