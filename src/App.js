@@ -99,7 +99,7 @@ class App extends Component {
                                     <div>
                                         <Opener/>
                                         <Stats/>
-                                        <Card type={"Project"} name={"ajax"}/>
+                                        <Card type={"Project"} name={"conduct"}/>
                                         <Card type={"Experience"} name={"watonomous"}/>
                                     </div>
                                 )}/>
