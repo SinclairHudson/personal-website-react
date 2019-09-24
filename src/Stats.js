@@ -11,7 +11,7 @@ class Stats extends Component {
                 {/*    <ReactGithubCalendar name="SinclairHudson"/>*/}
                 {/*</div>*/}
                 <div className="stat">
-                    <h1>6</h1>
+                    <h1>7</h1>
                     Hackathons attended
                 </div>
                 <div className="stat">

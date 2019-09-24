@@ -16,6 +16,7 @@ import resume from './Resume Jan 2019.pdf'
 
 
 import ScrollToTop from "./ScrollToTop";
+import Navbar from "./Navbar";
 
 const pub = process.env.PUBLIC_URL;
 
@@ -79,18 +80,7 @@ class App extends Component {
                     {/*     }}/>*/}
                     <Router onUpdate={() => window.scrollTo(0, 0)}>
                         <ScrollToTop> {/*Added because router preserves scroll position*/}
-                            <div className="NavBar">
-                                {/*<img className="logo" src={pub + "/img/svg/LOGO.svg"} alt={"Logo"}/>*/}
-                                <Link to={'/'}>
-                                    <div className="NavButton">
-                                        Home
-                                    </div>
-                                </Link>
-                                <NavButton location="Projects"/>
-                                <NavButton location="Experiences"/>
-                                <NavButton location="Contact"/>
-                                <NavButton location="Resume"/>
-                            </div>
+                        <Navbar/>
                             {/*end of NavBar*/}
                             <Switch>
                                 <Route path='/projects' component={ProjectPage}/>

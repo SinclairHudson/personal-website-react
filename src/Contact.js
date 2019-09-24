@@ -20,27 +20,27 @@ class Contact extends Component {
                 <ParaPicture img={pub + '/img/myface.jpg'} para={Opener}/>
                 <div className="row">
                     <div className="social">
-                        <a href="https://github.com/SinclairHudson">
+                        <a href="https://github.com/SinclairHudson" target="_blank">
                             <img src={pub + "/img/svg/githublogo.svg"}/>
                         </a>
                     </div>
                     <div className="social">
-                        <a href="https://www.facebook.com/people/Sinclair-Hudson/100011751077436">
+                        <a href="https://www.facebook.com/people/Sinclair-Hudson/100011751077436" target="_blank">
                             <img src={pub + "/img/svg/facebooklogo.svg"}/>
                         </a>
                     </div>
                     <div className="social">
-                        <a href="https://www.youtube.com/channel/UCk8n3-SC7fYYpLQkT0eYicA">
+                        <a href="https://www.youtube.com/channel/UCk8n3-SC7fYYpLQkT0eYicA" target="_blank">
                             <img src={pub + "/img/svg/youtubelogo.svg"}/>
                         </a>
                     </div>
                     <div className="social">
-                        <a href="https://www.linkedin.com/in/sinclair-h-490002130/">
+                        <a href="https://www.linkedin.com/in/sinclair-h-490002130/" target="_blank">
                             <img src={pub + "/img/svg/linkedinlogo.svg"}/>
                         </a>
                     </div>
                     <div className="social">
-                        <a href="https://devpost.com/SinclairHudson">
+                        <a href="https://devpost.com/SinclairHudson" target="_blank">
                             <img src={pub + "/img/svg/devpost.svg"}/>
                         </a>
                     </div>

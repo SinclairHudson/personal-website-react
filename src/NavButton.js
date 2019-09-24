@@ -9,7 +9,7 @@ import {
     Redirect,
     Switch
 } from 'react-router-dom';
-import resume from './Resume Jan 2019.pdf'
+import resume from './SinclairHudsonResumeSept22.pdf'
 
 class NavButton extends Component {
     constructor(props) {
@@ -18,13 +18,21 @@ class NavButton extends Component {
     }
 
     render() {
+        if(this.props.location === "Home"){
+            return(
+                <NavLink to={'/'}>
+                    <div className="NavButton">
+                        {this.props.location}
+                    </div>
+                </NavLink>);
+        }
         if(this.props.location === "Resume"){
             return(
-            <a href={resume}>
-                <div className="NavButton">
-                    {this.props.location}
-                </div>
-            </a>);
+                <a href={resume}>
+                    <div className="NavButton">
+                        {this.props.location}
+                    </div>
+                </a>);
         }
         return (
             <NavLink to={'/' + this.props.location.toLowerCase()} activeClassName={'active'}>
