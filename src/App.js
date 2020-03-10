@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import Opener from "./Opener";
-import Card from "./Card";
-import NavButton from "./NavButton";
+import Card from "./Card/Card";
 import Footer from "./Footer";
 import Project from "./Project";
 import Experience from "./Experience";
@@ -11,12 +10,13 @@ import ExperiencePage from "./ExperiencePage";
 import Contact from "./Contact";
 import {ParallaxProvider} from 'react-scroll-parallax';
 import {BrowserRouter as Router, Link, Route, Switch, Redirect} from 'react-router-dom';
-import Stats from "./Stats";
+import Stats from "./Stats/Stats";
 import resume from './Resume Jan 2019.pdf'
 
 
 import ScrollToTop from "./ScrollToTop";
-import Navbar from "./Navbar";
+import Navbar from "./NavBar/Navbar";
+// import styles from 'bootstrap/dist/css/bootstrap.min.css';
 
 const pub = process.env.PUBLIC_URL;
 

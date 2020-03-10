@@ -1,5 +1,50 @@
 {
     "Project": {
+        "waxmuseum": {
+            "title": "Wax Museum",
+            "dateStart": "Sept 2019",
+            "dataEnd": "Dec 2019",
+            "blurb": "This project uses laptop footage to turn off the laptop screen when I'm not looking at it.",
+            "img": "0.jpg",
+            "tags": [
+                "Computer Vision",
+                "PyTorch",
+                "Weights & Biases",
+                "OpenCV"
+            ],
+            "gallery": [
+                {
+                    "src": "0.jpg",
+                    "width": "320",
+                    "height": "320"
+                },
+                {
+                    "src": "1.jpg",
+                    "width": "1347",
+                    "height": "973"
+                },
+                {
+                    "src": "2.jpg",
+                    "width": "1514",
+                    "height": "497"
+                }
+            ],
+            "video": "https://www.youtube.com/embed/CPZNZpvM5Xc",
+            "url": "/project/waxmuseum",
+            "intro": "Two Problems. I don't know PyTorch, and my laptop battery kept dying during lecture. The latter has easier solutions. I could lower my brightness, reduce non-essential usage, or remember to charge my laptop. However, I'm a bit of an AI geek and I had an unreasonable yet simple solution in mind: turn off the screen when I'm not looking at it, and turn it back on when I am. I just need a simple convolutional net to perform binary classification. This will stretch my battery life further, and give me a chance to learn PyTorch. Problems solved.",
+            "learned": [
+                "Weights & Biases analytics",
+                "Tuning hyperparameters",
+                "PyTorch"
+            ],
+            "custom": [
+                {
+                    "header": "Weights and Biases",
+                    "body": "Weights and Biases is a new analytics platform for training neural networks. It's like TensorBoard, but better in functionality and easier to use. It allows you to compare runs effortlessly, sweep through hyperparameters, and display custom metrics. I used Weights and Biases in this project to find optimal hyperparameters like the learning rate, and to display performance metrics so I could pick the best model. I also displayed a bunch of activation maps, because they're really cool. :)"
+                }
+            ],
+            "howItWorks": "This network is a simple convolutional one, with about 4 layers. I use openCV to get frames from the webcam, and then run them through the network. I then use the past 3 readings to smooth the output. If the network says I'm looking away, then I dim the screen through the command line. Otherwise, I keep the screen lit. It's only slightly more complex than an if statement in an infinite loop."
+        },
         "conduct": {
             "title": "Conduct",
             "dateStart": "June 2019",

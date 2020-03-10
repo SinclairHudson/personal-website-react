@@ -1,0 +1,46 @@
+.ParaPicture{
+    position: relative;
+    margin: 5% 5% 10% 5%;
+    flex: 1;
+    float: left;
+}
+.ParaPicture .Image{
+    width: 40%;
+    height: auto;
+    position: relative;
+    flex:1;
+}
+.ParaPicture .Text{
+    width: 50%;
+    height: auto;
+    position: relative;
+    float: left;
+    padding: 5%;
+    flex: 1;
+
+}
+.ParaPicture .Image .Parallax{
+    width: 100%;
+    height: auto;
+    border-radius: 51%;
+    float: left;
+}
+
+@media screen and (max-width: 1240px) {
+    .ParaPicture{
+        padding: 0%;
+        margin-left: 0;
+        margin-right: 0;
+        position: relative;
+        float: right;
+    }
+    .ParaPicture .Image{
+        width: 90%;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .ParaPicture .Text{
+        width: 90%;
+        font-size: 5.6vw;
+    }
+}

@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Navbar from "./Navbar";
+import Navbar from "./NavBar/Navbar";
 import Opener from "./Opener";
-import Card from "./Card";
+import Card from "./Card/Card";
 import PropTypes from 'prop-types';
 import {CSSTransitionGroup} from 'react-transition-group'
-import NavButton from "./NavButton";
+import NavButton from "./NavBar/NavButton";
 import Footer from "./Footer";
 import Project from "./Project";
 import Experience from "./Experience";

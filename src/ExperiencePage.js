@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Card from "./Card";
+import Card from "./Card/Card";
 import data from './Data.json';
 import Line from "./Line";
 import {ParallaxBanner} from "react-scroll-parallax";
@@ -17,7 +17,7 @@ class ExperiencePage extends Component {
         }
         return (
             <div>
-                <ParallaxBanner style={{height: '500px'}}
+                <ParallaxBanner className='ParallaxBanner'
                                 layers={[
                                     {
                                         image: pub + '/img/experiences.jpg',

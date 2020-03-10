@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import './App.css';
 import data from './Data.json';
-import ParaPicture from "./ParaPicture";
+import ParaPicture from "./ParaPicture/ParaPicture";
 import Gallery from "react-photo-gallery";
-import Card from "./Card";
+import Card from "./Card/Card";
 
 const pub = process.env.PUBLIC_URL;
 

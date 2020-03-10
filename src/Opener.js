@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Overlap from './Overlap/Overlap';
 import {ParallaxBanner} from "react-scroll-parallax";
-import ParaPicture from './ParaPicture'
+import ParaPicture from './ParaPicture/ParaPicture'
 const pub = process.env.PUBLIC_URL;
 
 

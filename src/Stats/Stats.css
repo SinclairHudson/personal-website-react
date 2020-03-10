@@ -1,0 +1,8 @@
+.stat{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+.stat h1{
+    margin-bottom: -2%;
+}
