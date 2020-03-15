@@ -9,7 +9,7 @@ import {
     Redirect,
     Switch
 } from 'react-router-dom';
-import resume from './SinclairHudsonResumeSept22.pdf'
+import resume from './ResumeOct11.pdf'
 
 class NavButton extends Component {
     constructor(props) {

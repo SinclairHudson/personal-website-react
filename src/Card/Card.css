@@ -57,7 +57,7 @@
     color: #818181
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1440px) {
     .Card .Text{
         margin-left: 0;
         margin-right: 0;

@@ -88,7 +88,7 @@ class App extends Component {
                                 <Route exact path='/' render={() => (
                                     <div>
                                         <Opener/>
-                                        <Stats/>
+                                        {/*<Stats/>*/}
                                         <Card type={"Project"} name={"conduct"}/>
                                         <Card type={"Experience"} name={"watonomous"}/>
                                     </div>

@@ -26,20 +26,28 @@
     float: left;
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1440px) {
     .ParaPicture{
-        padding: 0%;
+        padding: 5%;
+        width: 90%;
         margin-left: 0;
         margin-right: 0;
         position: relative;
         float: right;
     }
+    .ParaPicture .Image .Parallax{
+        align-self: center;
+    }
     .ParaPicture .Image{
-        width: 90%;
+        width: 95%;
+        height: 100%;
+        padding: 2.5%;
+        margin-bottom: 100%;
         align-items: center;
         margin-bottom: 100px;
     }
     .ParaPicture .Text{
+        margin-top: 10%;
         width: 90%;
         font-size: 5.6vw;
     }

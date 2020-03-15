@@ -17,7 +17,7 @@ class ProjectPage extends Component {
         }
         return (
             <div>
-                <ParallaxBanner style={{height: '500px'}}
+                <ParallaxBanner className='ParallaxBanner'
                                 layers={[
                                     {
                                         image: pub + '/img/circuit.jpg',

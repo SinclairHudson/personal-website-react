@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import logo from '../logo.svg';
 import './Navbar.css';
 import NavButton from "./NavButton";
@@ -16,21 +16,21 @@ class Navbar extends Component {
         this.toggle = this.toggle.bind(this)
     }
 
-    toggle(){
+    toggle() {
         console.log("Toggle!!! I am now");
         console.log(this.state.toggled.toString());
-        if(this.state.toggled){
+        if (this.state.toggled) {
             this.setState({
                 toggled: 0
             })
-        }
-        else{
+        } else {
             this.setState({
                 toggled: 1
             })
         }
 
     }
+
     componentWillMount() {
         window.addEventListener('resize', this.handleWindowSizeChange);
     }
@@ -38,42 +38,44 @@ class Navbar extends Component {
     componentWillUnmount() {
         window.removeEventListener('resize', this.handleWindowSizeChange);
     }
+
     handleWindowSizeChange = () => {
-        this.setState({ width: window.innerWidth });
+        this.setState({width: window.innerWidth});
     };
 
     render() {
-        const { width } = this.state;
-        const isMobile = width <= 1240;
-        if(isMobile) { //we're in mobile baby
-            if(this.state.toggled){ // the hamburger menu has been toggled! Time to actually display something
+        const {width} = this.state;
+        const isMobile = width <= 1440;
+        if (isMobile) { //we're in mobile baby
+            if (this.state.toggled) { // the hamburger menu has been toggled! Time to actually display something
                 return (
                     <div className="NavBar">
                         {/*<img className="logo" src={pub + "/img/svg/LOGO.svg"} alt={"Logo"}/>*/}
-                        <div className={"social"} onClick={this.toggle}>
-                            <img src={pub + "/img/svg/githublogo.svg"}/>
+                        <div className="MenuToggle" onClick={this.toggle}>
+                            <img src={pub + "/img/svg/Hamburger-white.svg"}/>
                         </div>
-                        <NavButton onClick={this.toggle} location="Home"/>
-                        <NavButton onClick={this.toggle} location="Projects"/>
-                        <NavButton onClick={this.toggle} location="Experiences"/>
-                        <NavButton onClick={this.toggle} location="Contact"/>
-                        <NavButton location="Resume"/>
+                        <div className="NavButtons">
+                            <NavButton onClick={this.toggle} location="Home"/>
+                            <NavButton onClick={this.toggle} location="Projects"/>
+                            <NavButton onClick={this.toggle} location="Experiences"/>
+                            <NavButton onClick={this.toggle} location="Contact"/>
+                            <NavButton location="Resume"/>
+                        </div>
+
                     </div>
                 );
-            }
-            else{
+            } else {
                 return (
                     <div className="NavBar">
                         {/*<img className="logo" src={pub + "/img/svg/LOGO.svg"} alt={"Logo"}/>*/}
-                        <div className={"social"} onClick={this.toggle}>
-                            <img onClick={this.toggle} src={pub + "/img/svg/facebooklogo.svg"}/>
+                        <div className={"MenuToggle"} onClick={this.toggle}>
+                            <img onClick={this.toggle} src={pub + "/img/svg/Hamburger-white.svg"}/>
                         </div>
                     </div>
                 );
             }
 
-        }
-        else{
+        } else {
             return (
                 <div className="NavBar">
                     {/*<img className="logo" src={pub + "/img/svg/LOGO.svg"} alt={"Logo"}/>*/}
