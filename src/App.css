@@ -20,6 +20,7 @@ h1{
   color: #E4C230;
   font-size: 5.6vw;
   margin-top: -3vw;
+  margin-bottom: 0;
   letter-spacing: 0.1em;
   z-index: 20;
 }
@@ -74,12 +75,23 @@ h2{
   border-radius: 10px;
 }
 .social{
-    float:left;
     width:18%;
     padding: 1%;
     border-radius: 50px;
 }
-
+.row{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.pageBasic{
+  flex-direction: column;
+  flex: 1;
+}
 
 @media screen and (max-width: 1440px) {
   .App {

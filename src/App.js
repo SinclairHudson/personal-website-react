@@ -89,8 +89,8 @@ class App extends Component {
                                     <div>
                                         <Opener/>
                                         {/*<Stats/>*/}
+                                        <Card type={"Experience"} name={"huawei"}/>
                                         <Card type={"Project"} name={"conduct"}/>
-                                        <Card type={"Experience"} name={"watonomous"}/>
                                     </div>
                                 )}/>
                                 <Route path='/project/:projectId'

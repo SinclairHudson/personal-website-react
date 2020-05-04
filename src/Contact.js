@@ -15,7 +15,7 @@ class Contact extends Component {
             " because I check that at least once per day. If you have any questions my projects, university, or anything else," +
             " please send me an email or message me. I want to hear from you. \n \n hudson.sinclair00 at gmail.com";
         return (
-            <div>
+            <div className="pageBasic">
                 <h2>Contact</h2>
                 <ParaPicture img={pub + '/img/myface.jpg'} para={Opener}/>
                 <div className="row">

@@ -109,6 +109,10 @@ class Experience extends Component {
 
     render() {
         let videoElement = null;
+        let fontsize = {fontSize: "5.6vw"};
+        if(this.state.title.length > 12){
+            fontsize = {fontSize: "4vw", marginTop: "0vw"};
+        }
         if (this.state.video) {
             videoElement = <div><h2>Video:</h2>
                 <div className={"vid-container"}>
@@ -118,11 +122,12 @@ class Experience extends Component {
                 </div>
             </div>;
         }
+
         return (
             <div>
                 <div>
                     <h2>Experience:</h2>
-                    <h1>{this.state.title.toUpperCase()}</h1>
+                    <h1 style={fontsize}>{this.state.title.toUpperCase()}</h1>
                     <ParaPicture img={pub + '/img/' + this.props.id + "/" + this.state.img} para={this.state.intro}/>
                 </div>
                 <div>
