@@ -44,6 +44,44 @@
       ],
       "howItWorks": "This network is a simple convolutional one, with about 4 layers. I use OpenCV to get frames from the webcam, and then run them through the network. I then use the past 3 readings to smooth the output. If the network says I'm looking away, then I dim the screen through the command line. Otherwise, I keep the screen lit. It's only slightly more complex than an if statement in an infinite loop."
     },
+    "vm": {
+      "title": "VM",
+      "date-start": "Nov 2019",
+      "date-end": "Dec 2019",
+      "blurb": "For the final project of CS246E, a partner and I built a version of VIM in C++.",
+      "img": "0.png",
+      "links": [
+      ],
+      "tags": [
+        "C++",
+        "Systems Design",
+        "Design Patterns"
+      ],
+      "gallery": [
+        {
+          "src": "0.png",
+          "width": "5",
+          "height": "5"
+        },
+        {
+          "src": "VM.png",
+          "width": "734",
+          "height": "496"
+        }
+      ],
+      "intro": "For the final project of CS246E, we were instructed to implement vim in C++. It was a massive object-oriented design project. In total, we had to support 56 commands, including macros and unbounded undos. My partner and I spent weeks planning out our design, making sure every command could be implemented easily. We used many design patterns and SOLID principles to create an excellent design that made implementation straightforward. In the end our complete coverage of the specification, as well as a few bonus features, earned us a grade of 104%.",
+      "video": null,
+      "url": "/project/vm",
+      "learned": [
+        "Applying SOLID Principles",
+        "Writing a very detailed design report, along with a formal UML",
+        "Pair programming with a partner",
+        "Applying Object-Oriented design patterns",
+        "Project planning and software design"
+      ],
+      "custom": [],
+      "howItWorks": "In the end, our project centered around the Command design pattern. Essentially, all commands were represented as Command objects. There was a command parser class, which was in charge of converting keyboard input into Command objects. Keep in mind that commands in VIM can be repeated, like ‘6fc’. The commands were stored on a stack structure to keep undos clean. We had a class that handled the text being manipulated, and file management. We also had a class for displaying the content, which followed the Observer design pattern to update when the contents or cursor changed."
+    },
     "conduct": {
       "title": "Conduct",
       "dateStart": "June 2019",
