@@ -298,7 +298,6 @@
       "img": "0.jpg",
       "links": [
         "https://github.com/SinclairHudson/sinclairhudson.github.io"
-
       ],
       "tags": [
         "React",
@@ -479,7 +478,49 @@
       "howItWorks": "The design is pretty simple. ChannelAdvisor, the database, accepts two forms of products: Standards and Bundles. Standards are for stand-alone products, like tents, stoves, shovels, etc. Bundles are for very similar products, like apparel that is the same except for size and colour. In each bundle, there is a parent and multiple children. The child products inherit most of their information from the parent. After the user of the Java Program chooses Bundle or Standard, They are greeted with the information page. There are around 12 fields that need to be filled out to make a valid product. When they are filled out, the program stores every product as an object in the system memory. The user can continue to create products and they will be saved in the same way. Once the user clicks “export” on the main page, the program takes all the products in its memory and writes them to a CSV file according to the Channeladvisor formatting rules. The resulting CSV file can then be uploaded directly into ChannelAdvisor."
     }
   },
+
+
+
   "Experience": {
+    "untether": {
+      "title": "Software Developer at Untether.AI",
+      "dateStart": "Sept 2020",
+      "dataEnd": "Dec 2020",
+      "blurb": "For my third coop, I worked at Untether.AI. They're a startup that builds specialized cards for accelerated neural network inference.",
+      "img": "0.jpg",
+      "tags": [
+        "Computer Vision",
+        "TensorFlow",
+        "Python"
+      ],
+      "gallery": [
+        {
+          "src": "0.jpg",
+          "width": "320",
+          "height": "320"
+        }
+      ],
+      "video": null,
+      "url": "/experience/untether",
+      "intro": "I was on the neural networks team. We were responsible for converting TensorFlow networks into quantization-ready graphs, performing optimizations during the conversion.",
+      "learned": [
+        "Agile software development, fully integrated with GitHub Enterprise",
+        "Quantization and optimization of neural network operations",
+        "Designing, implementing, and evaluating product features",
+        "Building software while considering the compiler, and the hardware that it will run on."
+      ],
+      "custom": [
+        {
+          "header": "Non-Max Suppression",
+          "body": "A good portion of my time at Untether.AI was spent implementing Non-Max Suppression using only integer operations. That's so that NMS can be run on the runAI chip that Untether.AI is developing."
+        },
+        {
+          "header": "Uncertain Times",
+          "body": "This coop was completely remote, because of the COVID-19 pandemic. As a result, I don't have many pictures. :("
+        }
+      ]
+    },
+
     "huawei": {
       "title": "LiDAR Perception Researcher at Huawei",
       "dateStart": "Jan 2020",
