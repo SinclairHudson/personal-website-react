@@ -1,0 +1,48 @@
+name: tripwire
+blurb: An app built in React Native that triggers alarms when in proximity to
+  GPS coordinates.
+custom: []
+dataEnd: June 2019
+dateStart: June 2019
+gallery:
+- height: '2340'
+  src: 1.jpg
+  width: '1080'
+- height: '2340'
+  src: 3.jpg
+  width: '1080'
+- height: '2340'
+  src: 2.jpg
+  width: '1080'
+- height: '320'
+  src: 0.jpg
+  width: '320'
+- height: '4608'
+  src: 4.jpg
+  width: '3456'
+- height: '3456'
+  src: 5.jpg
+  width: '4608'
+howItWorks: The app uses the GPS in the phone for its main functionality. The
+  user can set certain coordinates as waypoints, and specify what kind of alarm
+  should trigger when the phone came within a specified radius of the point.
+img: 0.jpg
+intro: 'This was a project I created with three of my friends for EngHack 2019.
+  We decided to tackle a light problem: we were all missing our public transit
+  stops because we were reading, sleeping, or on our phones. Obviously, we needed
+  a way to alert us when we got close to a bus stop or specific location. We were
+  all new to React Native, so it was pretty rough, but we all had a good time.'
+learned:
+- React Native, specifically navigation in React Native
+- Advanced Git VC to get four devs working together on one project
+- Rapid Prototyping in a team
+links:
+- https://github.com/SinclairHudson/tripwire
+- https://devpost.com/software/tripwire
+tags:
+- React Native
+- EngHack 2019
+- UI/UX
+title: Tripwire
+url: /project/tripwire
+video: null

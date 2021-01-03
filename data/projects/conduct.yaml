@@ -1,0 +1,55 @@
+name: conduct
+blurb: This project allows me to control audio playback on my computer by making
+  gestures with my hands. It uses a YOLOv3 algorithm on webcam input.
+custom:
+- body: "There are a lot of things that could be added to this project fairly\
+    \ easily. I could mess around with the hyperparameters a little bit more to\
+    \ improve accuracy, I could photograph and tag more data, and I could add\
+    \ more gestures, like one for skip track. Top priority would be to increase\
+    \ the size of the dataset. I created and tagged the dataset myself, in one\
+    \ afternoon, in the same room, in the same clothes. Needless to say, the system\
+    \ isn\u2019t really robust, since it\u2019s only trained on 1500 similar frames.\
+    \ Sigh\u2026 tagging computer vision data is such a bore, but that\u2019s\
+    \ the only surefire way to improve my model."
+  header: What's Next?
+dataEnd: August 2019
+dateStart: June 2019
+gallery:
+- height: '320'
+  src: 0.jpg
+  width: '320'
+- height: '973'
+  src: 1.jpg
+  width: '1347'
+- height: '497'
+  src: 2.jpg
+  width: '1514'
+howItWorks: "The system is pretty easy to understand on a high level. There\u2019\
+  s an infinite loop, taking images from the webcam that\u2019s attached to my\
+  \ wall, and feeding them to a neural network. The YOLOv3 network is nice and\
+  \ fast, with enough accuracy to pick up my hands and classify them. The network\
+  \ not only detects where the hands are, but classifies them as one of 6 hand\
+  \ states: palm, back, flat, vertical, fist, and neutral. After the network has\
+  \ given its predictions, it\u2019s just a matter of simple logic to perform\
+  \ the audio modifications through terminal commands."
+img: 0.jpg
+intro: "I\u2019m always listening to music while I work, and I thought it would\
+  \ be cool to control my music through very intuitive hand gestures. This is\
+  \ one case where voice recognition gets unreliable; if you\u2019re blasting\
+  \ music, the microphone has trouble picking up your commands. So, you use your\
+  \ hands to control the computer, like a conductor directs a symphony."
+learned:
+- YOLOv3
+- Tuning hyperparameters
+- Learning rate decay and warmup epochs to help a network converge
+- Processing and displaying outputs using OpenCV
+links: []
+tags:
+- TensorFlow 2.0
+- Computer Vision
+- YOLOv3
+- OpenLabeling
+- OpenCV
+title: Conduct
+url: /project/conduct
+video: https://www.youtube.com/embed/CPZNZpvM5Xc

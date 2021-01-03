@@ -1,0 +1,59 @@
+name: speaker
+blurb: I built a speaker and amplifier circuit from scratch using components found
+  at a hardware store, soldering it all together and testing it with an oscilliscope
+custom: []
+date-end: July 2018
+date-start: June 2018
+gallery:
+- height: '5'
+  src: 0.jpg
+  width: '5'
+- height: '4608'
+  src: 1.jpg
+  width: '3456'
+- height: '747'
+  src: 2.jpg
+  width: '1286'
+- height: '2444'
+  src: 3.jpg
+  width: '3300'
+- height: '3264'
+  src: 4.jpg
+  width: '3264'
+- height: '824'
+  src: 5.jpg
+  width: '1013'
+- height: '4352'
+  src: 6.jpg
+  width: '3264'
+howItWorks: Currently, I've only trained a word classifier working, capable at
+  differentiating 18 different words apart, with about 92% accuracy. The idea
+  was to determine where the word breaks were, partition the sound file into words,
+  and then classify from there. However, with a low classification accuracy, I'm
+  currently looking into a new approach, using a sequence to sequence LSTM network
+  to turn the sound byte into phenomes first. The good news is that I already
+  have the data; I wrote a python script that automatically labels and records
+  my voice, making data collection easy.
+img: 0.jpg
+intro: 'During my Grade 12 Year, I had the wonderful opportunity to work with
+  an ex-Hydro One electrical engineer, James Whatley, in my Computer Engineering
+  12 Class. We learned and then built voltage regulation circuits, amperage regulations
+  circuits, full-wave rectifiers, but we were short on time at the end of the
+  year. Eager to learn more, I talked a bit with my instructor and we agreed to
+  meet for a few days in the early summer to work on another project: the portable
+  speaker.'
+learned:
+- Operational Amplifier circuits
+- Using an oscilliscope to debug physical circuits
+- Audio signal processing, filtering, and amplifying
+- Current and Voltage limiting circuits
+- Soldering complex circuits from schematics
+tags:
+- Hardware
+- Soldering
+- 3D Modelling
+- 3D Printing
+- Oscilliscope
+title: DIY Speaker
+url: /project/speaker
+video: https://www.youtube.com/embed/BCQs8cIpOGc

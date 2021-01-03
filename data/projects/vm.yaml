@@ -1,0 +1,43 @@
+name: vm
+blurb: For the final project of CS246E, a partner and I built a version of VIM
+  in C++.
+custom: []
+date-end: Dec 2019
+date-start: Nov 2019
+gallery:
+- height: '5'
+  src: 0.png
+  width: '5'
+- height: '496'
+  src: VM.png
+  width: '734'
+howItWorks: "In the end, our project centered around the Command design pattern.\
+  \ Essentially, all commands were represented as Command objects. There was a\
+  \ command parser class, which was in charge of converting keyboard input into\
+  \ Command objects. Keep in mind that commands in VIM can be repeated, like \u2018\
+  6fc\u2019. The commands were stored on a stack structure to keep undos clean.\
+  \ We had a class that handled the text being manipulated, and file management.\
+  \ We also had a class for displaying the content, which followed the Observer\
+  \ design pattern to update when the contents or cursor changed."
+img: 0.png
+intro: For the final project of CS246E, we were instructed to implement vim in
+  C++. It was a massive object-oriented design project. In total, we had to support
+  56 commands, including macros and unbounded undos. My partner and I spent weeks
+  planning out our design, making sure every command could be implemented easily.
+  We used many design patterns and SOLID principles to create an excellent design
+  that made implementation straightforward. In the end our complete coverage of
+  the specification, as well as a few bonus features, earned us a grade of 104%.
+learned:
+- Applying SOLID Principles
+- Writing a very detailed design report, along with a formal UML
+- Pair programming with a partner
+- Applying Object-Oriented design patterns
+- Project planning and software design
+links: []
+tags:
+- C++
+- Systems Design
+- Design Patterns
+title: VM
+url: /project/vm
+video: null

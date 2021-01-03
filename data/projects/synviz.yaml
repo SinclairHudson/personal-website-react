@@ -1,0 +1,54 @@
+name: synviz
+blurb: Placing 3rd in UofTHacks VII, Synviz is a wearable device that reads lips.
+custom:
+- body: "There are a lot of things that could be added to this project fairly\
+    \ easily. I could mess around with the hyperparameters a little bit more to\
+    \ improve accuracy, I could photograph and tag more data, and I could add\
+    \ more gestures, like one for skip track. Top priority would be to increase\
+    \ the size of the dataset. I created and tagged the dataset myself, in one\
+    \ afternoon, in the same room, in the same clothes. Needless to say, the system\
+    \ isn\u2019t really robust, since it\u2019s only trained on 1500 similar frames.\
+    \ Sigh\u2026 tagging computer vision data is such a bore, but that\u2019s\
+    \ the only surefire way to improve my model."
+  header: What's Next?
+dataEnd: Jan 2020
+dateStart: Jan 2020
+gallery:
+- height: '320'
+  src: prototype.jpg
+  width: '320'
+- height: '973'
+  src: pipeline.jpg
+  width: '1347'
+- height: '497'
+  src: team_photo.jpg
+  width: '1514'
+github: https://github.com/SinclairHudson/Synviz
+howItWorks: "The system is pretty easy to understand on a high level. There\u2019\
+  s an infinite loop, taking images from the webcam that\u2019s attached to my\
+  \ wall, and feeding them to a neural network. The YOLOv3 network is nice and\
+  \ fast, with enough accuracy to pick up my hands and classify them. The network\
+  \ not only detects where the hands are, but classifies them as one of 6 hand\
+  \ states: palm, back, flat, vertical, fist, and neutral. After the network has\
+  \ given its predictions, it\u2019s just a matter of simple logic to perform\
+  \ the audio modifications through terminal commands."
+img: prototype.jpg
+intro: 'My friend Martin came across a cool paper, "Deep Lip Reading: a comparison
+  of models and an online application" by Afouras et al. In the paper, the authors
+  try multiple pipelines, trying to '
+learned:
+- Creating a deep learning pipeline, deploying a custom model.
+- Building a very compact prototype.
+- Pitching well at a large hackathon
+links:
+- https://devpost.com/software/synviz
+- https://github.com/SinclairHudson/Synviz
+tags:
+- TensorFlow
+- GCP
+- Raspberry Pi
+- OpenCV
+title: Synviz
+url: /project/synviz
+video: null
+wandb: null

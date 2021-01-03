@@ -1,0 +1,41 @@
+name: custompc
+blurb: I built and now maintain my own PC. You could say I'm a PC enthusiast.
+custom: []
+dataEnd: Jan 2018
+dateStart: June 2016
+gallery:
+- height: '4099'
+  src: 1.jpg
+  width: '3377'
+- height: '960'
+  src: 3.jpg
+  width: '540'
+- height: '4245'
+  src: 2.jpg
+  width: '3455'
+- height: '4063'
+  src: 0.jpg
+  width: '3456'
+howItWorks: I don't like being slowed down by hardware, so my rig is pretty beefy.
+  It has a GTX 1070 graphics card, which is capable of training large neural networks.
+  I have an intel 8600K CPU, which is a 6 core processor; it's great for multitasking.
+  Couple that with a fast solid state drive, and I've got a pretty fast system.
+img: 4.jpg
+intro: "Over the last few years, I have slowly built and upgraded my personal\
+  \ computer. The project started in grade 10 when I dissected a few old computers\
+  \ from my father\u2019s workplace. From there, I slowly purchased and salvaged\
+  \ parts for the the next two years, arriving at this system. Along the way,\
+  \ I learned a great deal about how PCs work, and how to repair them. I have\
+  \ also helped a few friends out with building their own systems. My current\
+  \ build dual-boots Windows and Ubuntu."
+learned:
+- How all components of a computer are installed, and how they all work together
+- How to design a cost-effective build that has all the features I need
+- Configuring BIOS settings, and dual booting
+- File system permissions and formatting
+tags:
+- Hardware
+- Dual-Booting
+title: Custom PC
+url: /project/custompc
+video: null
