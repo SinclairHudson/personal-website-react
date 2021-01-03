@@ -1,0 +1,51 @@
+name: huawei
+blurb: For my second coop, I worked at a self-driving lab for Huawei.
+custom:
+- header: Summary Paper
+  body: Deep learning moves really fast. I was working on the SemanticKITTI dataset,
+    which was only released in late 2019. Despite this, the competition gets weekly
+    submissions, and more than a dozen papers have used it to evaluate their ideas.
+    At Huawei, I was tasked with reading all these relevant papers, and condensing
+    the main ideas into a single summary paper. This paper would be a great resource
+    for anyone who wanted to enter the competition, and it would also be a nice
+    reference for the team. We would be able to easily peruse the useful ideas
+    of over a dozen papers, and incorporate them into our own experiments.
+dataEnd: April 2020
+dateStart: Jan 2020
+gallery:
+- height: '320'
+  src: 0.jpg
+  width: '320'
+- height: '800'
+  src: 3d.gif
+  width: '800'
+- height: '480'
+  src: confmatrix_30.png
+  width: '640'
+- height: '792'
+  src: Figure_1.png
+  width: '3253'
+- height: '800'
+  src: Figure_2.png
+  width: '3775'
+img: 0.jpg
+intro: For four months in 2020, I worked at the Huawei autonomous vehicle lab
+  in Markham. It was an amazing experience; I got to contribute to deep learning
+  research, specifically in LiDAR segmentation. I kept up with current research,
+  built and ran experiments, and even wrote a summary report.
+learned:
+- Implementing models from scratch, based on research papers.
+- The planning, execution, and documentation of dozens of deep learning experiments
+- Analysing a dataset (SemanticKITTI) to create a good train/test/val split, and
+  inform different experiments
+- Reading a lot of research and summarizing it into useful contributions and interesting
+  ideas.
+tags:
+- Computer Vision
+- PyTorch
+- Research
+- OpenCV
+- LiDAR Segmentation
+title: LiDAR Perception Researcher at Huawei
+url: /experience/huawei
+video: null

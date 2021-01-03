@@ -1,0 +1,67 @@
+name: wawanesa
+blurb: For my first co-op term, I was working in Communitech for the Wawanesa
+  Insurance Innovation Lab.
+custom:
+- body: "My first proof of concept project was to create a system that helped\
+    \ a public relations team informed on the public\u2019s opinions. Using Twitter\u2019\
+    s API, I created a system that took tweets with a specific keyword and performed\
+    \ sentiment analysis on them. By storing the data in a database, the system\
+    \ is able to track Twitter user\u2019s opinions on the keyword. The whole\
+    \ project was built in AWS with Serverless. I used AWS Lambda, DynamoDB, Comprehend,\
+    \ and API Gateway. My Node.js code tied all those systems together."
+  header: Twitter Sentiment Analysis
+- body: "I built a similar system for Instagram, but for a different purpose.\
+    \ A big issue in the insurance industry is fraud. Thankfully, quite a few\
+    \ people incriminate themselves on social media, by posting things that prove\
+    \ their claim is false. I designed a system that looks at a user\u2019s instagram\
+    \ profile for posts relating to the claim, whether it be travel, automotive,\
+    \ etc. This data is retrieved with a flask application, and then sent off\
+    \ to a React frontend to be reviewed."
+  header: Instant Verification
+date-end: August 2019
+date-start: April 2019
+gallery:
+- height: '1'
+  src: 1.jpg
+  width: '1'
+- height: '4608'
+  src: 3.jpg
+  width: '3456'
+- height: '3456'
+  src: 2.jpg
+  width: '4608'
+- height: '4603'
+  src: 4.jpg
+  width: '2457'
+- height: '4608'
+  src: 5.jpg
+  width: '3456'
+- height: '4608'
+  src: 6.jpg
+  width: '3456'
+img: 1.jpg
+intro: I couldn't have asked for a better first coop. My job was to build proof-of-concept
+  projects for Wawanesa Insurance, exploring potential applications of new technologies
+  to the insurance industry. I completed three major projects, and was exposed
+  to so many different frameworks and technologies. I learned so much, and learned
+  while building.
+learned:
+- EC2, Sagemaker, Comprehend, Lambda, DynamoDB, API Gateway, ECR, Serverless
+- React
+- React Native
+- Frontend
+- NLP
+- BERT and Transformers
+- Jupyter Notebooks
+tags:
+- AWS
+- React
+- Node.js
+- React Native
+- Frontend
+- NLP
+- BERT and Transformers
+- Jupyter Notebooks
+title: Wawanesa Insurance Developer
+url: /experience/wawanesa
+video: null

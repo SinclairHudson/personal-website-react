@@ -1,0 +1,52 @@
+name: watonomous
+title: Watonomous Design Team
+blurb: Watonomous is the Self-Driving Car team at the University of Waterloo.
+  We compete in the SAE autodrive challenge, striving to create an autonomous
+  vehicle.
+custom:
+- body: My current position in the team is that of a Technical Lead on the Perception
+    Sub-team. I'm assigned a project, such as cyclist detection, road line detection,
+    etc. I then lead a small group of core members to accomplish said task. This
+    usually involves processing data, training a neural network, and evaluating
+    it. I'm also responsible for keeping up to date on research in the machine
+    vision space, and understanding how the whole watonomous codebase works. This
+    means that I do a lot of code reviews, pull requests, and debugging.
+  header: Technical Lead
+dataEnd: Present
+dateStart: April 2019
+description: I've worked on a few systems within perception. I experimented in
+  railroad bar detection, and I've trained a YOLOv3 model on Traffic Light detection.
+gallery:
+- height: '4608'
+  src: 1.jpg
+  width: '3456'
+- height: '4608'
+  src: 3.jpg
+  width: '3456'
+- height: '4608'
+  src: 2.jpg
+  width: '3456'
+- height: '4608'
+  src: 4.jpg
+  width: '3456'
+img: 0.jpg
+intro: I am currently on the Perception team, which is the team's front line.
+  We take in the data from cameras, LIDAR, and radar and attempt to process that
+  data to pull out meaningful features.
+learned:
+- OpenCV masking, searching
+- Training YOLOv3 on a traffic light dataset
+- Collaboration and Version Control on a huge, highly integrated codebase
+- ROS
+- OpenVino
+- Managing a small group of developers to complete a larger goal
+- Code Reviewing
+- Two-week build, test, deploy cycles with a large team and system
+tags:
+- Computer Vision
+- TensorFlow
+- OpenCV
+- YOLO
+- Keras
+url: /experience/watonomous
+video: null

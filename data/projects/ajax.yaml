@@ -1,0 +1,41 @@
+name: "ajax"
+title: "AJAX ASR"
+dateStart: "Sept 2018"
+dataEnd: "Feb 2019"
+blurb: "Voice Recognition system built with Google Tensorflow."
+img: "0.jpg"
+links:
+  - "https://github.com/SinclairHudson/AJAX"
+tags:
+  - TensorFlow
+  - NLP
+  - NumPy
+  - Tensorboard
+  - Keras
+  - LSTM
+gallery:
+  - {src: "0.jpg", width: 320, height: 320}
+  - {src: "1.jpg", width: 1527, height: 472}
+  - {src: "2.jpg", width: 3264, height: 4352}
+  - {src: "3.jpg", width: 361, height: 286}
+video: null
+url: /project/ajax
+intro: >
+  This is my oldest TensorFlow project, which all started with
+  a frustration with a horrible voice recognition library. I decided to give
+  it a shot myself, using Google TensorFlow. Currently, I have some parts working
+  with a sub-optimal accuracy, and I'm looking into different models and
+  methods to achieve great voice recognition. You can find all my
+  code on my GitHub.
+learned:
+- "Implementing and testing sequence classification neural networks"
+- "Google Tensorflow, NumPy, Pyaudio, and many other small libraries"
+- "Patience"
+- "A Research, Build, Test cycle to complete a project"
+custom: []
+howItWorks: >
+  Currently, I've only trained a word classifier working, capable at
+  differentiating 18 different words apart, with about 92% accuracy. The
+  idea was to determine where the word breaks were, partition the sound
+  file into words, and then classify from there.
+

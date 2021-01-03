@@ -1,0 +1,34 @@
+name: untether
+blurb: For my third coop, I worked at Untether.AI. They're a startup that builds
+  specialized cards for accelerated neural network inference.
+custom:
+- body: A good portion of my time at Untether.AI was spent implementing Non-Max
+    Suppression using only integer operations. That's so that NMS can be run on
+    the runAI chip that Untether.AI is developing.
+  header: Non-Max Suppression
+- body: This coop was completely remote, because of the COVID-19 pandemic. As
+    a result, I don't have many pictures. :(
+  header: Uncertain Times
+dataEnd: Dec 2020
+dateStart: Sept 2020
+gallery:
+- height: '320'
+  src: 0.jpg
+  width: '320'
+img: 0.jpg
+intro: I was on the neural networks team. We were responsible for converting TensorFlow
+  networks into quantization-ready graphs, performing optimizations during the
+  conversion.
+learned:
+- Agile software development, fully integrated with GitHub Enterprise
+- Quantization and optimization of neural network operations
+- Designing, implementing, and evaluating product features
+- Building software while considering the compiler, and the hardware that it will
+  run on.
+tags:
+- TensorFlow
+- Python
+- Computer Vision
+title: Software Developer at Untether.AI
+url: /experience/untether
+video: null

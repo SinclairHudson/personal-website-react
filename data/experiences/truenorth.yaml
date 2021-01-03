@@ -1,0 +1,27 @@
+name: truenorth
+blurb: Technology for good conference in Kitchener, Ontario.
+dataEnd: June 2019
+dateStart: June 2019
+gallery:
+- height: '4608'
+  src: 1.jpg
+  width: '3456'
+- height: '4608'
+  src: 3.jpg
+  width: '3456'
+- height: '4608'
+  src: 2.jpg
+  width: '3456'
+img: 0.jpg
+intro: 'I attended The True North Tech Conference with my friends from the Wawanesa
+  Insurance innovation outpost. The conference was hosted by Communitech, in Kitchener.
+  There conference focused around tech for good. Privacy, security, implications
+  of new technology. '
+learned:
+- Ethics in technology
+- Providing digital solutions to social issues
+tags:
+- Ethics in Tech
+title: True North 2019
+url: /experience/truenorth
+video: null

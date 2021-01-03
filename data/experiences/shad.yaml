@@ -1,0 +1,39 @@
+name: shad
+blurb: A month long STEAM and Entrepreneurship program, at the University of New
+  Brunswick.
+dataEnd: July 2017
+dateStart: July 2017
+gallery:
+- height: '720'
+  src: hill.jpg
+  width: '960'
+- height: '1'
+  src: cave.jpg
+  width: '1'
+- height: '774'
+  src: hopewell.jpg
+  width: '960'
+- height: '526'
+  src: pier.jpg
+  width: '750'
+- height: '1152'
+  src: uni.jpg
+  width: '2048'
+img: cave.jpg
+intro: "In the July of 2017, I attended the SHAD Program at The University of\
+  \ New Brunswick. SHAD is an educational summer program for exceptional youth\
+  \ across Canada, and it focuses on entrepreneurship. It was a month packed with\
+  \ fun and interesting experiences. We did robotics, went camping, and organized\
+  \ events. I also worked in a team of eight to create a mock business, which\
+  \ we pitched to \u2018investors\u2019 in a Shark Tank fashion."
+learned:
+- Rapidly networking with 79 very interesting people.
+- The basics of entrepreneurship in a team of 8.
+- Teamwork and Leadership.
+tags:
+- Entrepreneurship
+- Leadership
+- Networking
+title: SHAD UNB 2017
+url: /experience/shad
+video: null
