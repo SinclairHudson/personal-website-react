@@ -25,7 +25,7 @@
   "devDependencies": {},
   "homepage": "https://sinclairhudson.github.io",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "python3 gen_data.py && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",

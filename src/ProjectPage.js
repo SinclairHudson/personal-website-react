@@ -5,15 +5,15 @@ import Card from "./Card/Card";
 import data from './Data.json';
 import Line from "./Line";
 import { ParallaxBanner, Parallax } from 'react-scroll-parallax';
+
 const pub = process.env.PUBLIC_URL;
 
 class ProjectPage extends Component {
     render() {
         const projectList = [];
         for (let k in data["Project"]) {
-            projectList.push(
-                <Card type={"Project"} name={k}/>
-            );
+            let p = data["Project"][k]["priority"]
+            projectList[p] = <Card type={"Project"} name={k}/>
         }
         return (
             <div>

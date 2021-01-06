@@ -49,35 +49,6 @@ class App extends Component {
         return (
             <ParallaxProvider>
                 <div className="App">
-                    {/*<img src={pub + "/img/svg/verticalline.svg"} alt={"line"}*/}
-                    {/*     style={{*/}
-                    {/*         zIndex: -1, position: 'absolute',*/}
-                    {/*         top: this.state.offset * 0.9,*/}
-                    {/*         left: '17%'*/}
-                    {/*     }}/>*/}
-                    {/*<img src={pub + "/img/svg/verticalline.svg"} alt={"line"}*/}
-                    {/*     style={{*/}
-                    {/*         zIndex: -1, position: 'absolute',*/}
-                    {/*         top: this.state.offset * -1.2,*/}
-                    {/*         left: '83%'*/}
-                    {/*     }}/>*/}
-                    {/*<img src={pub + "/img/svg/verticalline.svg"} alt={"line"}*/}
-                    {/*     style={{*/}
-                    {/*         zIndex: -1, position: 'absolute',*/}
-                    {/*         top: this.state.offset / 3 + 100,*/}
-                    {/*         left: 200*/}
-                    {/*     }}/>*/}
-                    {/*<img src={pub + "/img/svg/verticalline.svg"} alt={"line"}*/}
-                    {/*     style={{*/}
-                    {/*         zIndex: -1, position: 'absolute',*/}
-                    {/*         top: this.state.offset / 4 + 800,*/}
-                    {/*         left: 1200*/}
-                    {/*     }}/>*/}
-                    {/*<img src={pub + "/img/svg/horizontalline.svg"} alt={"line"}*/}
-                    {/*     style={{*/}
-                    {/*         zIndex: -1, position: 'absolute',*/}
-                    {/*         top: '30%',*/}
-                    {/*     }}/>*/}
                     <Router onUpdate={() => window.scrollTo(0, 0)}>
                         <ScrollToTop> {/*Added because router preserves scroll position*/}
                         <Navbar/>
@@ -89,7 +60,7 @@ class App extends Component {
                                     <div>
                                         <Opener/>
                                         {/*<Stats/>*/}
-                                        <Card type={"Experience"} name={"huawei"}/>
+                                        <Card type={"Experience"} name={"untether"}/>
                                         <Card type={"Project"} name={"conduct"}/>
                                     </div>
                                 )}/>

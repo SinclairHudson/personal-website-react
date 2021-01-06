@@ -1,4 +1,5 @@
 name: website
+priority: 10
 blurb: This website is built by myself from scratch, designed in Illustrator,
   and coded using React.
 custom: []

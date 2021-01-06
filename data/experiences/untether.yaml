@@ -1,14 +1,22 @@
 name: untether
+priority: 0
 blurb: For my third coop, I worked at Untether.AI. They're a startup that builds
   specialized cards for accelerated neural network inference.
+intro: I was on the neural networks team. We were responsible for converting TensorFlow
+  networks into quantization-ready graphs, performing optimizations and
+  quantization during the conversion. The RunAI chip can only perform 8-bit integer
+  calculations, which means the neural networks had to be quantized. There's
+  some very clever math to represent floating point activations, weights, and
+  biases as integer values. Part of my job was converting common neural neural
+  network operations into the integer space.
 custom:
-- body: A good portion of my time at Untether.AI was spent implementing Non-Max
+- header: Non-Max Suppression
+  body: A good portion of my time at Untether.AI was spent implementing Non-Max
     Suppression using only integer operations. That's so that NMS can be run on
     the runAI chip that Untether.AI is developing.
-  header: Non-Max Suppression
-- body: This coop was completely remote, because of the COVID-19 pandemic. As
-    a result, I don't have many pictures. :(
-  header: Uncertain Times
+- header: Uncertain Times
+  body: This coop was completely remote, because of the COVID-19 pandemic. As
+    a result, I don't have many pictures.
 dataEnd: Dec 2020
 dateStart: Sept 2020
 gallery:
@@ -16,9 +24,6 @@ gallery:
   src: 0.jpg
   width: '320'
 img: 0.jpg
-intro: I was on the neural networks team. We were responsible for converting TensorFlow
-  networks into quantization-ready graphs, performing optimizations during the
-  conversion.
 learned:
 - Agile software development, fully integrated with GitHub Enterprise
 - Quantization and optimization of neural network operations

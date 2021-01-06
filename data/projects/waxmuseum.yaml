@@ -1,4 +1,5 @@
 name: waxmuseum
+priority: 3
 url: /project/waxmuseum
 title: Wax Museum
 dataEnd: Dec 2019
@@ -6,7 +7,7 @@ dateStart: Sept 2019
 blurb: This project uses laptop footage to turn off the laptop screen when I'm
   not looking at it.
 img: 0.png
-intro: 'Two Problems. I don''t know PyTorch, and my laptop battery keeps dying
+intro: 'Two problems. I don''t know PyTorch, and my laptop battery keeps dying
   during lecture. The latter has easier solutions. I could lower my brightness,
   reduce non-essential usage, or remember to charge my laptop. However, I''m a
   bit of an AI geek and I had an unreasonable yet simple solution in mind: turn

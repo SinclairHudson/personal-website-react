@@ -1,4 +1,5 @@
 name: tripwire
+priority: 12
 blurb: An app built in React Native that triggers alarms when in proximity to
   GPS coordinates.
 custom: []

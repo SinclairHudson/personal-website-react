@@ -1,4 +1,5 @@
 name: addingsoftware
+priority: 50
 blurb: Software created for ScoutTech Outfitters to automate the adding of products
   to various databases.
 custom: []

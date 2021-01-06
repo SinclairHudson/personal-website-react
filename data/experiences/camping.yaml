@@ -1,4 +1,5 @@
 name: camping
+priority: 29
 title: Camping Trips
 blurb: One of my more intense hobbies is camping, specifically canoe tripping.
 intro: "My family is outdoors oriented, and we've been involved in the Scouts Canada
@@ -7,8 +8,8 @@ intro: "My family is outdoors oriented, and we've been involved in the Scouts Ca
 
 custom:
 - header: Most Recent Trip
-  body: My most recent trip was a 14-Day canoe trip down the lower half of the Missinaibi River.
-  I took my drone on the trip, and got some pretty nice shots. See the video below.
+  body: "My most recent trip was a 14-Day canoe trip down the lower half of the Missinaibi River.
+  I took my drone on the trip, and got some pretty nice shots. See the video below."
 dataEnd: Present
 dateStart: Super Early
 gallery:
@@ -26,7 +27,7 @@ gallery:
   width: '540'
 img: 0.jpg
 learned:
-- Quick Decision making and communication skills
+- Quick decision-making and communication skills
 - Logistics and planning
 - Teamwork and perseverance
 tags:
@@ -35,4 +36,4 @@ tags:
 - Communication
 - White Water Canoeing
 url: /experience/camping
-video: https://www.youtube.com/watch?v=yUcVznxGcTA
+video: https://www.youtube.com/embed/yUcVznxGcTA

@@ -1,4 +1,5 @@
 name: vm
+priority: 5
 blurb: For the final project of CS246E, a partner and I built a version of VIM
   in C++.
 custom: []
@@ -29,6 +30,7 @@ intro: For the final project of CS246E, we were instructed to implement vim in
   the specification, as well as a few bonus features, earned us a grade of 104%.
 learned:
 - Applying SOLID Principles
+- Applying Model-View-Controller (MVC) architecture
 - Writing a very detailed design report, along with a formal UML
 - Pair programming with a partner
 - Applying Object-Oriented design patterns
