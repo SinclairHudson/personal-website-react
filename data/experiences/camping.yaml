@@ -1,13 +1,14 @@
 name: camping
 title: Camping Trips
 blurb: One of my more intense hobbies is camping, specifically canoe tripping.
+intro: "My family is outdoors oriented, and we've been involved in the Scouts Canada
+  program for many years. I've done winter camps and backpacking camps, but the
+  most impressive trips are whitewater canoe trips with my family."
+
 custom:
 - header: Most Recent Trip
-  body: My most recent trip was a 12-Day canoe trip down the Missinaibi River.
-    We went from Dog Lake to Mattice, with a lot of rain and whitewater in between.
-    Below is a video I made from the GoPro footage and pictures taken on the trip.
-    I edited it all in Adobe Premiere Pro, and there's a longer version for those
-    interested in all the whitewater.
+  body: My most recent trip was a 14-Day canoe trip down the lower half of the Missinaibi River.
+  I took my drone on the trip, and got some pretty nice shots. See the video below.
 dataEnd: Present
 dateStart: Super Early
 gallery:
@@ -24,11 +25,6 @@ gallery:
   src: 4.jpg
   width: '540'
 img: 0.jpg
-intro: "Ever since I was little, I was going on camping trips with my family;\
-  \ my father is an outdoor enthusiast. My family goes on a canoe trip just about\
-  \ every summer, and recently we\u2019ve been doing whitewater paddling down\
-  \ various rivers in Northern Ontario. Through the Scouts Canada program, I\u2019\
-  ve also been exposed to lightweight backpacking trips and winter camping."
 learned:
 - Quick Decision making and communication skills
 - Logistics and planning
@@ -39,4 +35,4 @@ tags:
 - Communication
 - White Water Canoeing
 url: /experience/camping
-video: https://www.youtube.com/embed/jbu0bRDEHXU
+video: https://www.youtube.com/watch?v=yUcVznxGcTA
