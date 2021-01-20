@@ -4,7 +4,7 @@ title: "JTrack: Juggling Prop Tracking Software"
 dateStart: "Jan 2021"
 dataEnd: "Jan 2021"
 blurb: "Silly little project that allows you to track the position and velocity of juggling balls."
-img: "0.png"
+img: "0.jpg"
 links:
   - "https://github.com/SinclairHudson/JTrack"
   - "https://devpost.com/software/jtrack-u0oksh"
@@ -14,11 +14,10 @@ tags:
   - Python
   - Kalman Filters
 gallery:
-  - {src: "0.png", width: 320, height: 320}
-  - {src: "1.png", width: 1049, height: 888}
-  - {src: "2.png", width: 850, height: 702}
-  - {src: "3.png", width: 394, height: 278}
-  - {src: "4.png", width: 437, height: 340}
+  - {src: "0.jpg", width: 320, height: 320}
+  - {src: "comet.jpg", width: 320, height: 320}
+  - {src: "consistency.jpg", width: 522, height: 460}
+  - {src: "rainbow.jpg", width: 524, height: 422}
 video: "https://www.youtube.com/embed/jWXFtPx-wpo"
 url: /project/jtrack
 intro: >
