@@ -1,0 +1,49 @@
+name: "jtrack"
+priority: 1
+title: "JTrack: Juggling Prop Tracking Software"
+dateStart: "Jan 2021"
+dataEnd: "Jan 2021"
+blurb: "Silly little project that allows you to track the position and velocity of juggling balls."
+img: "0.png"
+links:
+  - "https://github.com/SinclairHudson/JTrack"
+  - "https://devpost.com/software/jtrack-u0oksh"
+tags:
+  - Object Tracking
+  - OpenCV
+  - Python
+  - Kalman Filters
+gallery:
+  - {src: "0.png", width: 320, height: 320}
+  - {src: "1.png", width: 1049, height: 888}
+  - {src: "2.png", width: 850, height: 702}
+  - {src: "3.png", width: 394, height: 278}
+  - {src: "4.png", width: 437, height: 340}
+video: "https://www.youtube.com/embed/jWXFtPx-wpo"
+url: /project/jtrack
+intro: >
+  I coded this project up in 36 hours for Hack The North 2020++. It tracks juggling
+  balls in a video, so that you can add informative and creative effects to them.
+  There are some pretty cool and informative results.
+learned:
+- "Colour filtering and simple blob detection in OpenCV"
+- "Applying a Kalman Filter, and a general object detection stack"
+custom:
+- header: What's next?
+  body: "I want to make this software available to the general juggling community, so that we
+  can experiment, analyse, teach, and show off. So I need to round out the user interface,
+  make it very consistent, and add a lot of effects. Right now detections are the weakest link;
+  it works well for clementines, but not much else."
+howItWorks: >
+  In object tracking, we call an object a track.
+  There's a standard loop, that executes every frame. We first advance the Kalman filters for every track,
+  which have kinematics equations to predict parabolic motion. Then, we use OpenCV to detect
+  the locations of the balls. We then use the hungarian matching algorithm to find the best 
+  paring between detections and predictions (tracks). In the complete bipartite graph connecting predictions 
+  to detections, the cost is Euclidean distance in the image coordinate space. Once we've done
+  association, we update the Kalman filters for every track, and we add new tracks 
+  to detections that weren't paired up. We also delete old tracks; ones that we haven't seen in a while.
+  This goes on for every frame, and of course once we have this information we're free to do anything with it.
+  I like plotting apexes of throws, velocity-dependent colour trails, etc. 
+  The states of the Kalman filters contain estimates of position, velocity, and even acceleration.
+
