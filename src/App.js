@@ -11,7 +11,6 @@ import Contact from "./Contact";
 import {ParallaxProvider} from 'react-scroll-parallax';
 import {BrowserRouter as Router, Link, Route, Switch, Redirect} from 'react-router-dom';
 import Stats from "./Stats/Stats";
-import resume from './Resume Jan 2019.pdf'
 
 
 import ScrollToTop from "./ScrollToTop";
