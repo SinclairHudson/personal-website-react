@@ -1,0 +1,53 @@
+name: "cansofcom"
+priority: 0
+title: "CANSOFCOM: RADAR drone Classification"
+dateStart: "Jan 2021"
+dataEnd: "Jan 2021"
+blurb: "Drone Classifiction based on RADAR return signal, Hack the North 2020++."
+img: "0.png"
+links:
+  - "https://github.com/SinclairHudson/CANSOFCOM"
+tags:
+  - Signal Processing
+  - PyTorch
+  - Classification
+gallery:
+  - {src: "0.png", width: 320, height: 320}
+  - {src: "1.png", width: 1049, height: 888}
+  - {src: "2.png", width: 850, height: 702}
+  - {src: "3.png", width: 394, height: 278}
+  - {src: "4.png", width: 437, height: 340}
+video: null
+url: /project/cansofcom
+intro: >
+  I coded this project up in 48 hours for a challenge put on by the Canadian 
+  Special Operations Forces Command (CANSOFCOM). The challenge was to classify
+  commercial drones based on the noisy return signal from a RADAR. I highly
+  recommend you take a look at the Jupyter notebook that I've posted on Github;
+  I wrote it up to present my results in the competition, and it gives an 
+  executive summary of the project.
+learned:
+- "Fourier transforms and general signal processing terminology and techniques."
+- "Building a research-type repository super-fast."
+- "Signal-To-Noise ratios, Long window and short window STFTs."
+custom:
+- header: Let's talk about noise
+  body: "The data for this project was simulated at 3 different noise levels and
+  with two different sampling frequencies. My neural network performed exceptionally
+  on everything but 0 dB SNR (Signal to Noise Ratio). I plan on expanding the project
+  to handle more noise, lower sampling frequencies, and more challenges. This was a
+  first pass for the hackathon; there's still a lot to be done."
+- header: Results
+  body: "I ended up winning first place in this competition for Hack the North 2020++.
+  It's the first time I've come first place in a hackathon competition :)."
+howItWorks: >
+  There are actually a lot of interesting features to this problem. As the rotors
+  of a drone spin around, the radio waves from the RADAR hit the blades, and their
+  wavelength shortens (or lengthens), because of the doppler effect. So what you
+  get in the return signal is periodic bursts of higher frequencies.
+  These bursts can be seen in the short-window fourier transforms, and the icon
+  for this project depicts one of those bursts. These bursts look different 
+  depending on the size of the rotor blades, how fast they're spinning, and other drone parameters.
+  I decided to feed the short-window fourier transform of the signal to a
+  convolutional neural network, to classify which drone the signal originated from.
+

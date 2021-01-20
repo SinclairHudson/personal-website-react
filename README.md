@@ -13,3 +13,6 @@ This is an ongoing project, and it's never perfect. I try to update it often, bu
 npm install
 npm run start
 ```
+
+### TODO:
+- [ ] Automate images. Use python to append to the yaml files, so I don't have to put in the dimensions of images.
