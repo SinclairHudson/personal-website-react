@@ -1,0 +1,60 @@
+name: darwin
+priority: 0
+blurb: For my fourth coop, I worked at DarwinAI. Yeah, the "AI" suffix is pretty popular.
+
+intro: When I arrived at Darwin, the company had just decided it would be pivoting to
+    the manufacturing industry, focusing on quality inspection with AI.
+    I was responsible for organizing proof-of-concept projects for clients,
+    training models and presenting results weekly. I trained some object detectors
+    for Foreign Object Debris (FOD) detection, worked extensively on tabular data,
+    and I also authored two research repositories for the company to use in the future.
+    One of those was an anomaly detection research repository, using autoencoders.
+custom:
+- header: Identity Crisis
+  body: The Customer Experience team I was a part of was in an identity crisis
+    as the company made its pivot. Two internal promotions also changed our team
+    lead. We spent a lot of time as a team talking about our current and future
+    function in a company as we ventured into a new industry. I was able to participate
+    in a lot of discussions that would shape the work of Customer Experience, as we
+    dedicated our time to providing value to the customer.
+- header: Anomaly Detection Research
+  body: Although I was on the Customer Experience team, I had the opportunity
+    to build out two research repositories from scratch. One was for anomaly detection
+    in images, using autoencoders. I implemented many autoencoders from current research,
+    and tested their performance on client and public datasets. The main idea there
+    is to train the autoencoder on exclusively "normal" images, to achieve a low reconstruction loss
+    on those sorts of images. The autoencoder is not prepared to reconstruct anomalous images,
+    and so a high reconstruction loss correlates with an anomaly. This unsupervised approach
+    to anomaly detection will likely be critical in defect detection cases, since it flags new anomalies
+    as they arise in the manufacturing process; not only the ones in the training set.
+- header: Dataset Distillation Research
+  body: One of the things we always struggled with at Darwin was the lack of data.
+    Clients would come to us with hundreds of labelled images when we needed thousands to meet
+    their requirements. For this reason, I started exploring Dataset Distillation in a 
+    research repository for the company. The main idea with Dataset Distillation is that 
+    not all data samples are created equally. We can actually optimize the data to be super
+    effective at training models. The end goal is to speed up model training exponentially,
+    as we require just a few GD steps to achieve results that would take a model training on normal
+    data thousands of GD steps.
+dateStart: May 2021
+dataEnd: Aug 2021
+gallery:
+- height: '320'
+  src: 0.jpg
+  width: '320'
+- src: 2.jpg
+  height: '4608'
+  width: '3456'
+img: 0.jpg
+learned:
+- More about the inner workings of PyTorch
+- Authoring research repos
+- Presenting technical results to non-technical shareholders
+tags:
+- PyTorch
+- Python
+- Computer Vision
+- Anomaly Detection
+title: Deep Learning Developer at DarwinAI
+url: /experience/darwin
+video: null

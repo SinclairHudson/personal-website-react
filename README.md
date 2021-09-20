@@ -9,6 +9,8 @@ I built all the components myself, from mockups I built using Adobe Illustrator.
 This is an ongoing project, and it's never perfect. I try to update it often, but it often gets neglected because it's not my most interesting project. :)
 
 ### For me when I forget how to React:
+
+run `gen_data.py` and then
 ```
 npm install
 npm run start
