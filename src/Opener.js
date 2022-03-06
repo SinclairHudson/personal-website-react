@@ -13,12 +13,12 @@ class Opener extends Component {
             " This website serves as my online portfolio, including my projects and  work experience." +
             " Currently, I'm looking for my final coop placement, in the Fall 2022 term." +
             " After that, I'll be looking for a full-time job, since I'm graduating in May 2023." +
-            " Hit me up if you have an opportunity, my contact info can be found under the 'Contact' tab";
+            " Hit me up if you have an opportunity, my contact info can be found under the 'Contact' tab.";
         return (
             <div>
                         <h2>Hello! I'm</h2>
                         <h1>SINCLAIR HUDSON</h1>
-                <ParaPicture img={pub +'/img/myface.jpg'} para={Opener}/>
+                <ParaPicture img={pub +'/img/headshot-Aug-2021.jpg'} para={Opener}/>
             </div>
         );
     }

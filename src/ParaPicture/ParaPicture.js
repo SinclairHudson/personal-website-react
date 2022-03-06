@@ -10,7 +10,7 @@ class ParaPicture extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            img: pub + "/img/myface.jpg",
+            img: pub + "/img/headshot-Aug-2021.jpg",
             text: "Default Paragraph. Lorum Ipsum.",
             offset: 15
         };

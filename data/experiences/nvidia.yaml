@@ -1,14 +1,8 @@
-name: darwin
+name: nvidia
 priority: 1
-blurb: For my fourth coop, I worked at DarwinAI, on the Customer Experience team.
+blurb: I spent my fifth coop term working for NVIDIA, doing perception research for autonomous vehicles.
 
-intro: When I arrived at Darwin, the company had just decided it would be pivoting to
-    the manufacturing industry, focusing on quality inspection with AI.
-    I was responsible for organizing proof-of-concept projects for clients,
-    training models and presenting results weekly. I trained some object detectors
-    for Foreign Object Debris (FOD) detection, worked extensively on tabular data,
-    and I also authored two research repositories for the company to use in the future.
-    One of those was an anomaly detection research repository, using autoencoders.
+intro:
 custom:
 - header: Anomaly Detection Research
   body: Although I was on the Customer Experience team, I had the opportunity
@@ -29,15 +23,8 @@ custom:
     effective at training models. The end goal is to speed up model training exponentially,
     as we require just a few GD steps to achieve results that would take a model training on normal
     data thousands of GD steps.
-- header: Identity Crisis
-  body: The Customer Experience team I was a part of was in an identity crisis
-    as the company made its pivot. Two internal promotions also changed our team
-    lead. We spent a lot of time as a team talking about our current and future
-    function in a company as we ventured into a new industry. I was able to participate
-    in a lot of discussions that would shape the work of Customer Experience, as we
-    dedicated our time to providing value to the customer.
-dateStart: May 2021
-dataEnd: Aug 2021
+dateStart: Jan 2022
+dataEnd: Apr 2022
 gallery:
 - height: '320'
   src: 0.jpg
@@ -47,14 +34,16 @@ gallery:
   width: '3456'
 img: 0.jpg
 learned:
-- More about the inner workings of PyTorch
-- Authoring research repos
-- Presenting technical results to non-technical shareholders
+- Sparse convolutions and other sparse methods of working with point cloud data
+- Evaluating modern point cloud object detection methods on real data.
+- Working in a highly structured development environment
 tags:
+- Autonomous Vehicles
 - PyTorch
 - Python
 - Computer Vision
-- Anomaly Detection
-title: Deep Learning Developer at DarwinAI
-url: /experience/darwin
+- Object Detection
+- Auto-labelling
+title: Deep Learning Applied Researcher at DarwinAI
+url: /experience/nvidia
 video: null

@@ -1,5 +1,5 @@
 name: untether
-priority: 1
+priority: 3
 blurb: For my third coop, I worked at Untether.AI. They're a startup that builds
   specialized cards for accelerated neural network inference.
 intro: I was on the neural networks team. We were responsible for converting TensorFlow

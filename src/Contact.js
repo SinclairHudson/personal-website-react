@@ -17,7 +17,7 @@ class Contact extends Component {
         return (
             <div className="pageBasic">
                 <h2>Contact</h2>
-                <ParaPicture img={pub + '/img/myface.jpg'} para={Opener}/>
+                <ParaPicture img={pub + '/img/headshot-Aug-2021.jpg'} para={Opener}/>
                 <div className="row">
                     <div className="social">
                         <a href="https://github.com/SinclairHudson" target="_blank">
