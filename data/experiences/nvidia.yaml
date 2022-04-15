@@ -2,41 +2,35 @@ name: nvidia
 priority: 1
 blurb: I spent my fifth coop term working for NVIDIA, doing perception research for autonomous vehicles.
 
-intro:
+intro: I worked on the LiDAR perception sub-team of the autonomous vehicles organization
 custom:
-- header: Anomaly Detection Research
-  body: Although I was on the Customer Experience team, I had the opportunity
-    to build out two research repositories from scratch. One was for anomaly detection
-    in images, using autoencoders. I implemented many autoencoders from current research,
-    and tested their performance on client and public datasets. The main idea there
-    is to train the autoencoder on exclusively "normal" images, to achieve a low reconstruction loss
-    on those sorts of images. The autoencoder is not prepared to reconstruct anomalous images,
-    and so a high reconstruction loss correlates with an anomaly. This unsupervised approach
-    to anomaly detection will likely be critical in defect detection cases, since it flags new anomalies
-    as they arise in the manufacturing process; not only the ones in the training set.
-- header: Dataset Distillation Research
-  body: One of the things we always struggled with at Darwin was the lack of data.
-    Clients would come to us with hundreds of labelled images when we needed thousands to meet
-    their requirements. For this reason, I started exploring Dataset Distillation in a 
-    research repository for the company. The main idea with Dataset Distillation is that 
-    not all data samples are created equally. We can actually optimize the data to be super
-    effective at training models. The end goal is to speed up model training exponentially,
-    as we require just a few GD steps to achieve results that would take a model training on normal
-    data thousands of GD steps.
+- header: Pseudo-GT efforts
+  body: A big focus of my coop was improving real-time detection pipelines for
+  use in pseudo-ground truth generation, or auto-labelling. The AV organization
+  has a lot of data coming in, and can't hope to have it all labelled by humans.
+  So my main project was to take a real-time LiDAR object detection network and
+  explore different ideas and methodologies that weren't necessarily real-time
+  or safety certified, to boost detection F-score.
+- header: Sparse Tensors
+  body: LiDAR data is very sparse, so one of my big efforts was getting 
+  sparse tensors and sparse tensor networks working throughout a whole detection
+  pipeline. For a pseudo-ground truth model, the limiting factor of designing models
+  is the memory, not the runtime. In my case, I was limited to 32GB, which isn't a lot
+  to work with. Sparse tensors allowed me to reduce the activation size of my
+  network by 98%, while improving F-scores. I was using Minkowski Engine, an
+  open source sparse tensor deep learning library from NVIDIA, which has great integration
+  with PyTorch.
 dateStart: Jan 2022
 dataEnd: Apr 2022
 gallery:
-- height: '320'
-  src: 0.jpg
+- src: 0.png
+  height: '320'
   width: '320'
-- src: 2.jpg
-  height: '4608'
-  width: '3456'
-img: 0.jpg
+img: 0.png
 learned:
 - Sparse convolutions and other sparse methods of working with point cloud data
-- Evaluating modern point cloud object detection methods on real data.
-- Working in a highly structured development environment
+- Evaluating modern point cloud object detection methods on real data
+- Working in a highly structured/safety-certified development environment
 tags:
 - Autonomous Vehicles
 - PyTorch
@@ -44,6 +38,7 @@ tags:
 - Computer Vision
 - Object Detection
 - Auto-labelling
-title: Deep Learning Applied Researcher at DarwinAI
+- remote
+title: Deep Learning Autonomous Vehicles Researcher
 url: /experience/nvidia
 video: null
