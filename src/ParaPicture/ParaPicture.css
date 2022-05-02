@@ -2,6 +2,7 @@
     position: relative;
     margin: 5% 5% 10% 5%;
     flex: 1;
+    width: 100%;
     float: left;
 }
 .ParaPicture .Image{

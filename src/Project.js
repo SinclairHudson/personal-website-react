@@ -26,6 +26,15 @@ function linkToButton(linkstring) {
             </div>
         )
     }
+    if (linkstring.includes("arxiv")) {
+        return (
+            <div className="social">
+                <a href={linkstring} target="_blank">
+                    <img src={pub + "/img/svg/Hamburger-white.svg"}/>
+                </a>
+            </div>
+        )
+    }
     if (linkstring.includes("devpost")) {
         return (
             <div className="social">

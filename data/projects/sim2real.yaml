@@ -1,0 +1,47 @@
+name: sim2real
+priority: 1
+blurb: While working at WATonomous, my team and I explored lane detection using
+  simulation data and unlabeled real data, performing domain adaptation from the simulation
+  to real-life.
+custom:
+- header: IV 2022
+  body: As of writing, the paper was accepted into the Intelligent Vehicles 2022 Symposium, in
+    Aachen, Germany. I'm likely going to travel there in June 2022 to present our work.
+dataEnd: Jun 2022
+dateStart: Jun 2021
+gallery:
+- src: lanes.png
+  height: '320'
+  width: '320'
+- src: model.png
+  height: '320'
+  width: '320'
+github: https://github.com/anita-hu/sim2real-lane-detection
+howItWorks: We tested multiple methods. Our highest performing methods featured
+  networks that mapped both the real images and simulation images into a shared
+  latent space. Then, a detector based on Ultra-Fast Lane Detection would predict
+  keypoints in the image from that latent space. Our experiments looked at the various
+  ways we could enforce the latent space distribution from simulated data and real data
+  to be similar. We tried Adversarial Discriminative techniques with a discriminator network,
+  and other forms of cyclic consistency losses commonly used in state-of-the-art unpaired image
+  translation models.
+img: lanes.png
+intro: Real-labelled data is expensive for AV. There is also a lack of open-source
+  datasets for lane detection. So my group at WATonomous set out on a research project
+  to create a good lane detection model using only simulation data and unlabelled
+  real-world data. This is usually called sim-to-real domain adaptation, and it's
+  of very high importance in the AV industry, to mitigate the cost of finding high-quality
+  data.
+learned:
+- Submitting to a conference, making continual revisions on a paper
+- presenting work at a conference
+- Running meaningful experiments in a research repository that brings together multiple ideas
+links:
+- https://arxiv.org/abs/2202.07133
+- https://github.com/anita-hu/sim2real-lane-detection
+tags:
+- IV 2022
+title: Sim-to-Real domain Adaptation for Lane Detection
+url: /project/sim2real
+video: null
+wandb: null

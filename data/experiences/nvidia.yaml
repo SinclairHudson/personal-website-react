@@ -2,28 +2,36 @@ name: nvidia
 priority: 1
 blurb: I spent my fifth coop term working for NVIDIA, doing perception research for autonomous vehicles.
 
-intro: I worked on the LiDAR perception sub-team of the autonomous vehicles organization
+intro: I worked on the LiDAR perception sub-team of the autonomous vehicles organization.
+  The internship was still remote, with most of the team on the west coast. I was working
+  on LiDAR object detection, which is quite similar to computer vision but with a couple
+  of very cool quirks and tricks. In my experiments to improve object detection
+  performance, I was doing a lot of 3D point cloud processing, with dense and sparse 
+  3D convolutional networks.
 custom:
 - header: Pseudo-GT efforts
   body: A big focus of my coop was improving real-time detection pipelines for
-  use in pseudo-ground truth generation, or auto-labelling. The AV organization
-  has a lot of data coming in, and can't hope to have it all labelled by humans.
-  So my main project was to take a real-time LiDAR object detection network and
-  explore different ideas and methodologies that weren't necessarily real-time
-  or safety certified, to boost detection F-score.
+    use in pseudo-ground truth generation, or auto-labelling. The AV organization
+    has a lot of data coming in, and can't hope to have it all labelled by humans.
+    So my main project was to take a real-time LiDAR object detection network and
+    explore different ideas and methodologies that weren't necessarily real-time
+    or safety certified, to boost detection F-score.
 - header: Sparse Tensors
   body: LiDAR data is very sparse, so one of my big efforts was getting 
-  sparse tensors and sparse tensor networks working throughout a whole detection
-  pipeline. For a pseudo-ground truth model, the limiting factor of designing models
-  is the memory, not the runtime. In my case, I was limited to 32GB, which isn't a lot
-  to work with. Sparse tensors allowed me to reduce the activation size of my
-  network by 98%, while improving F-scores. I was using Minkowski Engine, an
-  open source sparse tensor deep learning library from NVIDIA, which has great integration
-  with PyTorch.
+    sparse tensors and sparse tensor networks working throughout a whole detection
+    pipeline. For a pseudo-ground truth model, the limiting factor of designing models
+    is the memory, not the runtime. In my case, I was limited to 32GB, which isn't a lot
+    to work with. Sparse tensors allowed me to reduce the activation size of my
+    network by 98%, while improving F-scores. I was using Minkowski Engine, an
+    open source sparse tensor deep learning library from NVIDIA, which has great integration
+    with PyTorch.
 dateStart: Jan 2022
 dataEnd: Apr 2022
 gallery:
 - src: 0.png
+  height: '320'
+  width: '320'
+- src: 2d.png
   height: '320'
   width: '320'
 img: 0.png
@@ -41,4 +49,4 @@ tags:
 - remote
 title: Deep Learning Autonomous Vehicles Researcher
 url: /experience/nvidia
-video: null
+video: https://www.youtube.com/embed/T7w-ZCVVUgM

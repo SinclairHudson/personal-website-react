@@ -130,6 +130,7 @@ class Experience extends Component {
                     <h1 style={fontsize}>{this.state.title.toUpperCase()}</h1>
                     <ParaPicture img={pub + '/img/' + this.props.id + "/" + this.state.img} para={this.state.intro}/>
                 </div>
+                {this.generateCustoms()}
                 <div>
                     <h2>What I learned:</h2>
                     <ul>
@@ -138,7 +139,6 @@ class Experience extends Component {
                         })}
                     </ul>
                 </div>
-                {this.generateCustoms()}
                 {videoElement}
                 <div>
                     <h2>Pictures:</h2>
