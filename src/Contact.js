@@ -12,7 +12,7 @@ const pub = process.env.PUBLIC_URL;
 class Contact extends Component {
     render() {
         let Opener = "Below are various ways you can contact me. I'd say the best way to contact me would be email," +
-            " because I check that at least once per day. If you have any questions my projects, university, or anything else," +
+            " because I check that at least once per day. If you have any questions about my projects, university, or anything else," +
             " please send me an email or message me. I want to hear from you. \n \n hudson.sinclair00 at gmail.com";
         return (
             <div className="pageBasic">
