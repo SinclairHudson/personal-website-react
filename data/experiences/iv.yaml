@@ -1,0 +1,49 @@
+name: iv
+priority: 1
+blurb: I went to the Intelligent Vehicles 2022 conference to present research.
+
+intro: You can find the paper I presented on ArXiv.
+custom:
+- header: The research project
+  body: "The paper I presented was on exploring sim2real techniques for monocular camera
+  lane detection for autonomous vehicles. On Watonomous, lane detection was always
+  a big struggle for us, because we didn't have HD maps everywhere, and because
+  the open-source datasets for lane detection were often too small and narrow.
+  A lot of the times, these datasets didn't have the lane line types we had in Canada.
+  So my team created a simulation dataset from the CARLA simulator, and then looked
+  at using those labelled images along with unlabelled real-world images to train
+  a system that could achieve good real-world performance on the TuSimple dataset.
+  Some of the techniques we explored were pretty complicated, based upon predicting
+  lane positions and classifications from a latent representation in a style transfer
+  system. For more information, please check out the paper and code at 
+  https://github.com/anita-hu/sim2real-lane-detection ."
+dateStart: Jun 2022
+dataEnd: Jun 2022
+gallery:
+- src: 0.jpg
+  height: '320'
+  width: '320'
+- src: 1.jpg
+  height: '3456'
+  width: '4608'
+- src: 2.jpg
+  height: '4608'
+  width: '3456'
+- src: 3.jpg
+  height: '4608'
+  width: '3456'
+img: 0.jpg
+learned:
+- How conferences work in general
+- Extracting value from conferences
+- Updates on the latest in Intelligent Vehicle research in academia
+tags:
+- Autonomous Vehicles
+- PyTorch
+- Research
+- Computer Vision
+- CARLA
+- Style Transfer
+title: IV 2022 Conference
+url: /experience/iv
+video: null
