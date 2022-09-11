@@ -2,7 +2,7 @@ name: watonomous
 priority: 3
 title: Watonomous Design Team
 blurb: Watonomous is the Self-Driving Car team at the University of Waterloo.
-  We compete in the SAE autodrive challenge, striving to create an autonomous
+  We compete in the SAE Autodrive challenge, striving to create an autonomous
   vehicle.
 custom:
 - body: My current position in the team is that of a Technical Lead on the Perception
