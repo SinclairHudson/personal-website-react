@@ -1,0 +1,30 @@
+name: cruise
+priority: 0
+blurb: I did my 6th and final coop term working for Cruise, the GM self-driving company.
+intro: At Cruise, I was on the Model Deployment Platform team (MDP). Specifically, I was 
+  responsible for creating python tooling that we would use to debug models going through deployment,
+  from PyTorch to (usually) TensorRT. In deployment, we'd often get numerical disparity between
+  the optimized model and the original PyTorch model. My tools helped debug these issues, 
+  quantifying the errors and making it easy to find the root-cause.
+dateStart: Sept 2022
+dataEnd: Dec 2022
+gallery:
+- src: 0.png
+  height: '320'
+  width: '320'
+img: 0.png
+learned:
+- Software development in a well-structured team
+- Listening to customer feedback and iterating on my features
+- Model deployments, using ONNX and TensorRT
+tags:
+- Autonomous Vehicles
+- PyTorch
+- ONNX
+- Python
+- Computer Vision
+- Object Detection
+- SF
+title: Deep Learning Performance Engineer
+url: /experience/cruise
+video: null
