@@ -2,7 +2,7 @@ name: cruise
 priority: 0
 blurb: I did my 6th and final coop term working for Cruise, the GM self-driving company.
 intro: At Cruise, I was on the Model Deployment Platform team (MDP). Specifically, I was 
-  responsible for creating python tooling that we would use to debug models going through deployment,
+  responsible for creating Python tooling that we would use to debug models going through deployment,
   from PyTorch to (usually) TensorRT. In deployment, we'd often get numerical disparity between
   the optimized model and the original PyTorch model. My tools helped debug these issues, 
   quantifying the errors and making it easy to find the root-cause.

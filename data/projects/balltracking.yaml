@@ -1,0 +1,48 @@
+name: "balltracking"
+priority: 1
+title: "Ball Tracking"
+dateStart: "May 2023"
+dataEnd: "Dec 2023"
+blurb: "An object tracking pipeline used to add cool effects to sports balls in videos"
+img: "0.jpg"
+links:
+  - "https://github.com/SinclairHudson/ball-tracking"
+tags:
+  - Object Tracking
+  - OpenCV
+  - Python
+  - Kalman Filters
+  - Object Detection
+
+gallery:
+  - {src: "0.jpg", width: 320, height: 320}
+  - {src: "comet.jpg", width: 320, height: 320}
+  - {src: "consistency.jpg", width: 522, height: 460}
+  - {src: "rainbow.jpg", width: 524, height: 422}
+video: null
+url: /project/balltracking
+intro: >
+  This project is the descendant of a hackathon project that I worked on in 2021.
+  I wanted to create an application, mostly for juggling, that could add cool effects to balls
+  moving around in a video. I took my time to architect and build what's effectively 
+  an autonomous vehicle perception stack. There are a lot of effects available now, and it
+  uses a simple Python CLI.
+learned:
+- "pytest"
+- "GitHub Actions"
+- "Applying a Kalman Filter, and a general object detection stack"
+- "Building a nice CLI"
+custom:
+- header: What's next?
+  body: "I'd like to get the detections to work better; currently the video has to be 
+    perfect, with well-exposed tennis balls. I'm just using pre-trained NNs right now for 
+    detection, so I should probably train one specifically for sports balls."
+howItWorks: >
+  "The pipeline works in 3 stages: detection, tracking, and effects. In between these
+    stages, the state is stored in numpy files. This is so that if something goes wrong,
+    detections (which are expensive to produce) are able to be reused.
+    The detection simply goes through all the frames and detects balls. The tracking
+    stage takes those detections and creates tracks out of them, with a fairly simple
+    hungarian matching algorithm between tracks and detections. The birth and death conditions
+    are also fairly basic (for now). After that, the only thing left to do is to draw the
+    tracks. Those are accomplished using the many features of OpenCV."

@@ -9,10 +9,11 @@ const pub = process.env.PUBLIC_URL;
 
 class Opener extends Component {
     render() {
-        let Opener= "Hello! My name is Sinclair, and I'm currently attending the University of Waterloo for Computer Science." +
+        let Opener= "Hello! My name is Sinclair, and I'm currently attending the University of Toronto for a Master's of Applied Computing in Artificial Intelligence." +
             " This website serves as my online portfolio, including my projects and  work experience." +
-            " Currently, I'm looking for my final coop placement, in the Fall 2022 term." +
-            " After that, I'll be looking for a full-time job, since I'm graduating in May 2023." +
+            " Most of my experience is around machine learning for robotics, usually in autonomous vehicles." + 
+            " I'm very passionate about machine learning research, solving novel problems." + 
+            " Currently, I'm looking for an 8-month research coop placement, starting in May 2024" +
             " Hit me up if you have an opportunity, my contact info can be found under the 'Contact' tab.";
         return (
             <div>
