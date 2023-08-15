@@ -1,5 +1,5 @@
 name: "balltracking"
-priority: 1
+priority: 200
 title: "Ball Tracking"
 dateStart: "May 2023"
 dataEnd: "Dec 2023"
@@ -22,7 +22,7 @@ gallery:
 video: null
 url: /project/balltracking
 intro: >
-  This project is the descendant of a hackathon project that I worked on in 2021.
+  This project is the descendant of a hackathon project that I worked on in 2021 (JTrack).
   I wanted to create an application, mostly for juggling, that could add cool effects to balls
   moving around in a video. I took my time to architect and build what's effectively 
   an autonomous vehicle perception stack. There are a lot of effects available now, and it
@@ -30,6 +30,7 @@ intro: >
 learned:
 - "pytest"
 - "GitHub Actions"
+- "gradio GUI"
 - "Applying a Kalman Filter, and a general object detection stack"
 - "Building a nice CLI"
 custom:

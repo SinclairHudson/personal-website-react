@@ -25,11 +25,6 @@ class Contact extends Component {
                         </a>
                     </div>
                     <div className="social">
-                        <a href="https://www.facebook.com/people/Sinclair-Hudson/100011751077436" target="_blank">
-                            <img src={pub + "/img/svg/facebooklogo.svg"}/>
-                        </a>
-                    </div>
-                    <div className="social">
                         <a href="https://www.youtube.com/channel/UCk8n3-SC7fYYpLQkT0eYicA" target="_blank">
                             <img src={pub + "/img/svg/youtubelogo.svg"}/>
                         </a>

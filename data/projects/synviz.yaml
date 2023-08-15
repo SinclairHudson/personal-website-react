@@ -1,5 +1,5 @@
 name: synviz
-priority: 2
+priority: 50
 blurb: Placing 3rd in UofTHacks VII, Synviz is a wearable device that reads lips.
 custom:
 - body: "There are a lot of things that could be added to this project fairly\

@@ -1,5 +1,5 @@
 name: nvidia
-priority: 1
+priority: 90
 blurb: I spent my fifth coop term working for NVIDIA, doing perception research for autonomous vehicles.
 
 intro: I worked on the LiDAR perception sub-team of the autonomous vehicles organization.

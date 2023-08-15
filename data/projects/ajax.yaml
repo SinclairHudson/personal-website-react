@@ -1,6 +1,6 @@
 name: "ajax"
-priority: 4
-title: "AJAX ASR"
+priority: 40
+title: "AJAX Speech Recognition"
 dateStart: "Sept 2018"
 dataEnd: "Feb 2019"
 blurb: "Voice Recognition system built with Google Tensorflow."

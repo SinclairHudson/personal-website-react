@@ -1,5 +1,5 @@
 name: vm
-priority: 5
+priority: 80
 blurb: For the final project of CS246E, a partner and I built a version of VIM
   in C++.
 custom: []

@@ -1,5 +1,5 @@
 name: sim2real
-priority: 1
+priority: 150
 blurb: While working at WATonomous, my team and I explored lane detection using
   simulation data and unlabeled real data, performing domain adaptation from the simulation
   to real-life.

@@ -28,7 +28,7 @@ class NavButton extends Component {
         }
         if(this.props.location === "Resume"){
             return(
-                <a href={resume}>
+                <a href={"https://github.com/SinclairHudson/resume/blob/master/main.pdf"}>
                     <div className="NavButton">
                         {this.props.location}
                     </div>

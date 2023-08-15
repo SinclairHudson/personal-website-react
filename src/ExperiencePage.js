@@ -9,10 +9,13 @@ import {ParallaxBanner} from "react-scroll-parallax";
 const pub = process.env.PUBLIC_URL;
 class ExperiencePage extends Component {
     render() {
-        const experiences = [];  // the names
-        for(let k in data["Experience"]){
-            let p = data["Experience"][k]["priority"]
-            experiences[p] = <Card type={"Experience"} name={k}/>
+        let experience_list = Object.values(data.Experience)
+
+        experience_list.sort((a, b) => (a.priority < b.priority) ? 1 : -1)
+
+        let experience_cards = []
+        for (let experience of experience_list) {
+            experience_cards.push(<Card type="Experience" name={experience.name}/>)
         }
         return (
             <div>
@@ -27,7 +30,7 @@ class ExperiencePage extends Component {
                         <h1>EXPERIENCES</h1>
                     </div>
                 </ParallaxBanner>
-                {experiences}
+                {experience_cards}
             </div>
         );
     }

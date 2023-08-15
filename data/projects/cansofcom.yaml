@@ -1,5 +1,5 @@
 name: "cansofcom"
-priority: 2
+priority: 100
 title: "CANSOFCOM: RADAR drone Classification"
 dateStart: "Jan 2021"
 dataEnd: "Jan 2021"

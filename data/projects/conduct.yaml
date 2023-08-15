@@ -1,5 +1,5 @@
 name: conduct
-priority: 1
+priority: 70
 blurb: This project allows me to control audio playback on my computer by making
   gestures with my hands. It uses a YOLOv3 algorithm on webcam input.
 custom:

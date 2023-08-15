@@ -1,5 +1,5 @@
 name: "jtrack"
-priority: 1
+priority: 50
 title: "JTrack: Juggling Prop Tracking Software"
 dateStart: "Jan 2021"
 dataEnd: "Jan 2021"

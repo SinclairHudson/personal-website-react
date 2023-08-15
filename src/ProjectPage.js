@@ -10,11 +10,15 @@ const pub = process.env.PUBLIC_URL;
 
 class ProjectPage extends Component {
     render() {
-        const projectList = [];
-        for (let k in data["Project"]) {
-            let p = data["Project"][k]["priority"]
-            projectList[p] = <Card type={"Project"} name={k}/>
+        let projectList = Object.values(data["Project"])
+
+        projectList.sort((a, b) => (a.priority < b.priority) ? 1 : -1)
+
+        let project_cards = []
+        for (let project of projectList) {
+            project_cards.push(<Card type="Project" name={project.name}/>)
         }
+
         return (
             <div>
                 <ParallaxBanner className='ParallaxBanner'
@@ -28,7 +32,7 @@ class ProjectPage extends Component {
                         <h1>PROJECTS</h1>
                     </div>
                 </ParallaxBanner>
-                {projectList}
+                {project_cards}
             </div>
         );
     }
