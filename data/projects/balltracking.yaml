@@ -4,7 +4,7 @@ title: "Ball Tracking"
 dateStart: "May 2023"
 dataEnd: "Dec 2023"
 blurb: "An object tracking pipeline used to add cool effects to sports balls in videos"
-img: "0.jpg"
+img: "debug.png"
 links:
   - "https://github.com/SinclairHudson/ball-tracking"
 tags:
@@ -15,10 +15,10 @@ tags:
   - Object Detection
 
 gallery:
-  - {src: "0.jpg", width: 320, height: 320}
-  - {src: "comet.jpg", width: 320, height: 320}
-  - {src: "consistency.jpg", width: 522, height: 460}
-  - {src: "rainbow.jpg", width: 524, height: 422}
+  - {src: "debug.png", width: 320, height: 320}
+  - {src: "contrail.png", width: 320, height: 320}
+  - {src: "fully_connected_neon.png", width: 320, height: 320}
+  - {src: "neon_line.png", width: 300, height: 300}
 video: null
 url: /project/balltracking
 intro: >
@@ -30,7 +30,7 @@ intro: >
 learned:
 - "pytest"
 - "GitHub Actions"
-- "gradio GUI"
+- "Gradio GUI"
 - "Applying a Kalman Filter, and a general object detection stack"
 - "Building a nice CLI"
 custom:
@@ -39,11 +39,11 @@ custom:
     perfect, with well-exposed tennis balls. I'm just using pre-trained NNs right now for 
     detection, so I should probably train one specifically for sports balls."
 howItWorks: >
-  "The pipeline works in 3 stages: detection, tracking, and effects. In between these
+    The pipeline works in 3 stages: detection, tracking, and effects. In between these
     stages, the state is stored in numpy files. This is so that if something goes wrong,
     detections (which are expensive to produce) are able to be reused.
     The detection simply goes through all the frames and detects balls. The tracking
     stage takes those detections and creates tracks out of them, with a fairly simple
     hungarian matching algorithm between tracks and detections. The birth and death conditions
     are also fairly basic (for now). After that, the only thing left to do is to draw the
-    tracks. Those are accomplished using the many features of OpenCV."
+    tracks. Those are accomplished using the many features of OpenCV.
